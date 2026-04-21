@@ -800,6 +800,53 @@
     }
     .whatsapp-btn:hover { background: #1ebe5b; }
 
+    /* --- Quiz --- */
+    .quiz-wrap { padding: 24px; max-width: 500px; margin: 0 auto; }
+    .quiz-progress {
+      display: flex; gap: 6px; margin-bottom: 20px;
+    }
+    .quiz-pip {
+      flex: 1; height: 4px; border-radius: 2px;
+      background: var(--border); transition: background 0.3s;
+    }
+    .quiz-pip.done    { background: var(--gold); }
+    .quiz-pip.current { background: var(--gold); opacity: 0.5; }
+
+    .quiz-question {
+      font-size: 1.05rem; font-weight: 700;
+      line-height: 1.5; margin-bottom: 20px;
+    }
+    .quiz-options { display: flex; flex-direction: column; gap: 10px; }
+    .quiz-option {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      text-align: left;
+    }
+    .quiz-option:hover:not(:disabled) { border-color: var(--gold-dim); background: rgba(226,165,58,0.07); }
+    .quiz-option.correct  { border-color: #4ade80; background: rgba(74,222,128,0.12); color: #4ade80; }
+    .quiz-option.wrong    { border-color: #ef4444; background: rgba(239,68,68,0.12);  color: #ef4444; }
+    .quiz-option:disabled { cursor: default; }
+
+    .quiz-next {
+      margin-top: 18px; width: 100%;
+      padding: 12px; border-radius: 10px;
+      background: var(--gold); border: none;
+      color: #000; font-weight: 700; font-size: 0.95rem;
+      cursor: pointer; transition: background 0.2s;
+      display: none;
+    }
+    .quiz-next:hover { background: #f0c84a; }
+
+    .quiz-result { text-align: center; padding: 16px 0; }
+    .quiz-score  { font-size: 3.5rem; font-weight: 900; color: var(--gold); margin-bottom: 8px; }
+    .quiz-score-label { font-size: 1rem; color: var(--text-dim); margin-bottom: 20px; }
+    .quiz-score-msg   { font-size: 1.1rem; font-weight: 700; margin-bottom: 24px; }
+
     /* --- Gemeinsame Watchlist --- */
 
     /* Gemeinsame Watchlist Ansicht */
@@ -850,7 +897,7 @@
       transition: border-color 0.2s;
     }
     .slist-film-item:hover { border-color: var(--gold-dim); }
-    .slist-film-poster { width: 44px; height: 64px; object-fit: cover; border-radius: 6px; flex-shrink: 0; background: var(--border); }
+    .slist-film-poster { width: 72px; height: 105px; object-fit: cover; border-radius: 8px; flex-shrink: 0; background: var(--border); }
     .slist-film-info { flex: 1; min-width: 0; }
     .slist-film-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .slist-film-meta { font-size: 0.75rem; color: var(--text-dim); }
@@ -1363,13 +1410,17 @@
       btn.classList.remove('active');
       btn.textContent = '○';
       card.classList.remove('is-seen');
+      saveSeen(seen);
     } else {
       seen.add(filmId);
       btn.classList.add('active');
       btn.textContent = '✓';
       card.classList.add('is-seen');
+      saveSeen(seen);
+      // Quiz anbieten
+      const m = allMovies.find(x => x.filmId === filmId);
+      if (m) startQuiz(m);
     }
-    saveSeen(seen);
   }
 
   // ── UCI Abo Aufpreise ─────────────────────────────────
@@ -1860,6 +1911,112 @@
       .replace(/'/g, '&#39;');
   }
 
+  // ── Film-Quiz ────────────────────────────────────────────
+  let quizState = null; // { questions, current, score }
+
+  async function startQuiz(movie) {
+    // Modal mit Ladebildschirm öffnen
+    document.getElementById('modalContent').innerHTML = `
+      <div class="quiz-wrap" style="text-align:center;padding:48px 24px;">
+        <div style="font-size:2.5rem;margin-bottom:16px;">🎬</div>
+        <div style="font-size:1.1rem;font-weight:700;margin-bottom:8px;">Quiz wird geladen…</div>
+        <div style="font-size:0.85rem;color:var(--text-dim);">KI generiert Fragen zu „${escHtml(movie.title)}"</div>
+        <div class="spinner" style="margin:20px auto 0;"></div>
+      </div>`;
+    document.getElementById('modalBackdrop').classList.add('open');
+    document.body.style.overflow = 'hidden';
+
+    try {
+      const year = movie.firstDate ? new Date(movie.firstDate).getFullYear() : '';
+      const res = await fetch(`/api/quiz?title=${encodeURIComponent(movie.title)}&year=${year}`);
+      const data = await res.json();
+      if (!data.questions) throw new Error(data.error || 'Keine Fragen erhalten');
+
+      quizState = { questions: data.questions, current: 0, score: 0 };
+      renderQuizQuestion(movie.title);
+    } catch (err) {
+      document.getElementById('modalContent').innerHTML = `
+        <div class="quiz-wrap" style="text-align:center;padding:40px 24px;">
+          <div style="font-size:2rem;margin-bottom:12px;">😕</div>
+          <p style="font-weight:700;margin-bottom:8px;">Quiz nicht verfügbar</p>
+          <p style="font-size:0.85rem;color:var(--text-dim);">${escHtml(err.message)}</p>
+          <button class="quiz-next" style="display:block;margin-top:20px;" onclick="closeModalBtn()">Schließen</button>
+        </div>`;
+    }
+  }
+
+  function renderQuizQuestion(movieTitle) {
+    const { questions, current } = quizState;
+    const q = questions[current];
+    const total = questions.length;
+
+    const pips = questions.map((_, i) =>
+      `<div class="quiz-pip ${i < current ? 'done' : i === current ? 'current' : ''}"></div>`
+    ).join('');
+
+    const options = q.options.map((opt, i) =>
+      `<button class="quiz-option" onclick="answerQuiz(${i})">${escHtml(opt)}</button>`
+    ).join('');
+
+    document.getElementById('modalContent').innerHTML = `
+      <div class="quiz-wrap">
+        <div style="font-size:0.8rem;color:var(--text-dim);margin-bottom:10px;">
+          🎬 ${escHtml(movieTitle)} · Frage ${current + 1} von ${total}
+        </div>
+        <div class="quiz-progress">${pips}</div>
+        <div class="quiz-question">${escHtml(q.question)}</div>
+        <div class="quiz-options">${options}</div>
+        <button class="quiz-next" id="quizNext" onclick="nextQuizQuestion('${escHtml(movieTitle)}')">
+          ${current + 1 < total ? 'Weiter →' : 'Ergebnis sehen 🏆'}
+        </button>
+      </div>`;
+  }
+
+  function answerQuiz(selectedIdx) {
+    const q = quizState.questions[quizState.current];
+    const options = document.querySelectorAll('.quiz-option');
+    options.forEach(btn => btn.disabled = true);
+
+    if (selectedIdx === q.correct) {
+      options[selectedIdx].classList.add('correct');
+      quizState.score++;
+    } else {
+      options[selectedIdx].classList.add('wrong');
+      options[q.correct].classList.add('correct');
+    }
+
+    document.getElementById('quizNext').style.display = 'block';
+  }
+
+  function nextQuizQuestion(movieTitle) {
+    quizState.current++;
+    if (quizState.current < quizState.questions.length) {
+      renderQuizQuestion(movieTitle);
+    } else {
+      renderQuizResult(movieTitle);
+    }
+  }
+
+  function renderQuizResult(movieTitle) {
+    const { score, questions } = quizState;
+    const total = questions.length;
+    const pct = Math.round(score / total * 100);
+    const msg = pct === 100 ? '🏆 Perfekt! Du kennst den Film auswendig!'
+               : pct >= 75  ? '🎉 Sehr gut! Fast alles richtig!'
+               : pct >= 50  ? '👍 Nicht schlecht! Hast du aufgepasst?'
+               : pct >= 25  ? '😅 Noch etwas Luft nach oben…'
+               :               '🍿 Vielleicht nochmal anschauen?';
+
+    document.getElementById('modalContent').innerHTML = `
+      <div class="quiz-wrap quiz-result">
+        <div style="font-size:0.85rem;color:var(--text-dim);margin-bottom:12px;">🎬 ${escHtml(movieTitle)}</div>
+        <div class="quiz-score">${score}/${total}</div>
+        <div class="quiz-score-label">${pct}% richtig</div>
+        <div class="quiz-score-msg">${msg}</div>
+        <button class="quiz-next" style="display:block;" onclick="closeModalBtn()">Fertig ✓</button>
+      </div>`;
+  }
+
   // ── Abstimmung ───────────────────────────────────────────
   let isPollMode = false;
   let pollSelected = new Set(); // filmIds
@@ -2108,18 +2265,18 @@
 
           const showtimesHtml = showtimes.length > 0
             ? `<div class="slist-showtimes">
-                ${showtimes.slice(0, 3).map(day => `
+                ${showtimes.slice(0, 2).map(day => `
                   <div class="slist-showday">
                     <span class="slist-showday-label">${escHtml(day.date)}</span>
                     <span class="slist-showday-times">
-                      ${day.times.slice(0, 4).map(t =>
+                      ${day.times.slice(0, 3).map(t =>
                         `<span class="slist-showtime">${escHtml(t.time)}${t.version ? ` <em>${escHtml(t.version)}</em>` : ''}</span>`
                       ).join('')}
-                      ${day.times.length > 4 ? `<span class="slist-showtime-more">+${day.times.length - 4}</span>` : ''}
+                      ${day.times.length > 3 ? `<span class="slist-showtime-more">+${day.times.length - 3}</span>` : ''}
                     </span>
                   </div>
                 `).join('')}
-                ${showtimes.length > 3 ? `<div style="font-size:0.72rem;color:var(--text-dim);margin-top:4px;">+ ${showtimes.length - 3} weitere Tage</div>` : ''}
+                ${showtimes.length > 2 ? `<div style="font-size:0.72rem;color:var(--text-dim);margin-top:4px;">+ ${showtimes.length - 2} weitere Tage</div>` : ''}
               </div>`
             : `<div class="slist-no-showtimes">Noch keine Vorstellungen geplant</div>`;
 

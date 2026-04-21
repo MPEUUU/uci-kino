@@ -467,6 +467,79 @@ app.post('/api/polls/:id/vote', (req, res) => {
   res.json({ success: true, votes: poll.votes });
 });
 
+// ── Film-Quiz (Groq AI) ───────────────────────────────────
+const quizCache = new Map(); // title → { questions, timestamp }
+const QUIZ_TTL  = 24 * 60 * 60 * 1000; // 24h
+
+app.get('/api/quiz', async (req, res) => {
+  const title = (req.query.title || '').trim();
+  const year  = (req.query.year  || '').trim();
+  if (!title) return res.status(400).json({ error: 'title fehlt' });
+
+  const GROQ_KEY = process.env.GROQ_API_KEY;
+  if (!GROQ_KEY) return res.status(503).json({ error: 'Kein Groq API Key konfiguriert' });
+
+  const cacheKey = `${title}|${year}`;
+  const cached = quizCache.get(cacheKey);
+  if (cached && Date.now() - cached.timestamp < QUIZ_TTL) {
+    return res.json({ questions: cached.questions });
+  }
+
+  try {
+    const prompt = `Erstelle genau 4 Multiple-Choice-Fragen auf Deutsch über den Inhalt des Films "${title}"${year ? ` (${year})` : ''}.
+Die Fragen sollen sich ausschließlich auf Handlung, Charaktere, Szenen und Wendungen beziehen — nicht auf Produktionsdaten wie Laufzeit oder Regisseur.
+Antworte NUR mit einem JSON-Array, kein erklärender Text davor oder danach:
+[
+  {
+    "question": "Frage...",
+    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "correct": 0
+  }
+]
+"correct" ist der Index (0-3) der richtigen Antwort.`;
+
+    const ctrl = new AbortController();
+    const timeout = setTimeout(() => ctrl.abort(), 20000);
+    const groqRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      signal: ctrl.signal,
+      headers: {
+        'Authorization': `Bearer ${GROQ_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'llama-3.3-70b-versatile',
+        messages: [{ role: 'user', content: prompt }],
+        temperature: 0.7,
+        max_tokens: 1000,
+      }),
+    });
+    clearTimeout(timeout);
+
+    if (!groqRes.ok) {
+      const err = await groqRes.text();
+      throw new Error(`Groq: ${groqRes.status} ${err}`);
+    }
+
+    const data = await groqRes.json();
+    const content = data.choices?.[0]?.message?.content || '';
+
+    // JSON aus der Antwort extrahieren
+    const jsonMatch = content.match(/\[[\s\S]*\]/);
+    if (!jsonMatch) throw new Error('Kein JSON in Groq-Antwort');
+    const questions = JSON.parse(jsonMatch[0]);
+
+    if (!Array.isArray(questions) || questions.length === 0)
+      throw new Error('Ungültiges Fragen-Format');
+
+    quizCache.set(cacheKey, { questions, timestamp: Date.now() });
+    res.json({ questions });
+  } catch (err) {
+    console.error('Quiz error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // ── Gemeinsame Watchlist (eine für alle) ─────────────────
 const groupWatchlist = {
   films: [], // [{ filmId, title, poster, genre, runtime, addedBy, addedAt }]
