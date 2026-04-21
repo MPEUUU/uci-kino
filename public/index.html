@@ -917,7 +917,7 @@
     .slist-showtime-more { font-size: 0.68rem; color: var(--text-dim); padding: 2px 4px; }
     .slist-no-showtimes { font-size: 0.72rem; color: var(--text-dim); margin: 4px 0; font-style: italic; }
 
-    .slist-status { font-size: 0.65rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
+    .slist-status { font-size: 0.65rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-right: 5px; vertical-align: middle; flex-shrink: 0; }
     .slist-status.current  { background: rgba(74,222,128,0.15); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
     .slist-status.upcoming { background: rgba(226,165,58,0.15); color: var(--gold); border: 1px solid rgba(226,165,58,0.3); }
 
@@ -2127,13 +2127,13 @@
             <div class="slist-film-item">
               ${f.poster ? `<img class="slist-film-poster" src="${escHtml(f.poster)}" onerror="this.style.display='none'">` : '<div class="slist-film-poster"></div>'}
               <div class="slist-film-info">
-                <div class="slist-film-title">
-                  ${escHtml(f.title)}
+                <div class="slist-film-title">${escHtml(f.title)}</div>
+                <div class="slist-film-meta">
                   ${movieData?.isUpcoming
                     ? `<span class="slist-status upcoming">Demnächst</span>`
                     : `<span class="slist-status current">Läuft</span>`}
+                  ${[f.genre?.split(',')[0], f.runtime ? f.runtime + ' Min.' : ''].filter(Boolean).join(' · ')}
                 </div>
-                <div class="slist-film-meta">${[f.genre?.split(',')[0], f.runtime ? f.runtime + ' Min.' : ''].filter(Boolean).join(' · ')}</div>
                 ${showtimesHtml}
                 <div class="slist-film-by">von ${escHtml(f.addedBy)}</div>
               </div>
