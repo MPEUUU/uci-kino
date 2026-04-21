@@ -9,11 +9,8 @@ const PORT = process.env.PORT || 3000;
 const UCI_URL = 'https://www.uci-kinowelt.de/kinoprogramm/bad-oeynhausen/73/poster';
 const BASE_URL = 'https://www.uci-kinowelt.de';
 
-// Proxy-Dienste als Fallback wenn UCI direkt blockiert
-const PROXIES = [
-  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
-];
+// GitHub-Raw-URL zur gespeicherten JSON-Datei (vom Scraper befüllt)
+const DATA_URL = 'https://raw.githubusercontent.com/MPEUUU/uci-kino/main/data/movies.json';
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -21,39 +18,7 @@ let cache = { data: null, timestamp: 0 };
 const CACHE_TTL = 10 * 60 * 1000;
 let fetchInFlight = null;
 
-// Versucht eine URL direkt oder über Proxy-Dienste zu laden
-async function fetchWithFallback(url) {
-  const attempts = [
-    // 1. Direkter Aufruf
-    () => fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'de-DE,de;q=0.9',
-      }
-    }),
-    // 2. AllOrigins Proxy
-    () => fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`),
-    // 3. CorsProxy
-    () => fetch(`https://corsproxy.io/?${encodeURIComponent(url)}`),
-  ];
-
-  for (const attempt of attempts) {
-    try {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 20000);
-      const res = await attempt();
-      clearTimeout(timeout);
-      if (res.ok) {
-        const html = await res.text();
-        if (html.includes('film-container')) return html; // echte UCI-Seite
-      }
-    } catch (e) {
-      console.log('Fetch attempt failed:', e.message);
-    }
-  }
-  throw new Error('Alle Fetch-Versuche fehlgeschlagen (UCI blockiert alle Routen)');
-}
+let fetchInFlight = null;
 
 async function fetchMovies() {
   const now = Date.now();
@@ -62,10 +27,16 @@ async function fetchMovies() {
 
   fetchInFlight = (async () => {
     try {
-      const html = await fetchWithFallback(UCI_URL);
-      const movies = parseMovies(html);
-      cache = { data: movies, timestamp: Date.now() };
-      return movies;
+      // Liest die vom GitHub-Action gespeicherte JSON-Datei
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000);
+      const res = await fetch(DATA_URL, { signal: controller.signal });
+      clearTimeout(timeout);
+      if (!res.ok) throw new Error(`GitHub data fetch failed: ${res.status}`);
+      const json = await res.json();
+      if (!json.movies || json.movies.length === 0) throw new Error('Keine Filmdaten in JSON');
+      cache = { data: json.movies, timestamp: now };
+      return json.movies;
     } finally {
       fetchInFlight = null;
     }

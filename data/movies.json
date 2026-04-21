@@ -1,0 +1,4057 @@
+{
+  "movies": [
+    {
+      "title": "Michael",
+      "slug": "michael",
+      "filmId": "399413",
+      "filmUrl": "https://www.uci-kinowelt.de/film/michael/399413/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2367/image-thumb__2367__poster/399413.354a780a.jpg",
+      "genre": "Drama, Biografie",
+      "fsk": "6",
+      "runtime": "127",
+      "director": "Antoine Fuqua",
+      "cast": "Jaafar Jackson, Nia Long, Laura Harrier",
+      "description": "Der Film erzählt die Geschichte von Michael Jacksons Leben - weit über die Musik hinaus. Er zeichnet seinen Weg nach von der Entdeckung seines außergewöhnlichen Talents als Leadsänger der Jackson Five bis hin zu dem visionären Künstler, dessen kreativer Ehrgeiz ihn unermüdlich antrieb, der größte Entertainer der Welt zu werden.\n\nVon einigen seiner legendären Auftritte aus seiner frühen Solokarriere bis zu seinem Leben abseits der Bühne - das Publikum hat einen Platz in der ersten Reihe bei einem nie zuvor dagewesenen Blick auf das Leben der Pop-Ikone. Hier fängt seine Geschichte an. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "IMAX OV",
+              "performanceId": "E88E2000023PRSBVXE",
+              "numericId": "566663",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E88E2000023PRSBVXE/siteId/73/566663"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "198E2000023PRSBVXE",
+              "numericId": "566664",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/198E2000023PRSBVXE/siteId/73/566664"
+            },
+            {
+              "time": "16:50",
+              "version": "iSense",
+              "performanceId": "F88E2000023PRSBVXE",
+              "numericId": "566665",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F88E2000023PRSBVXE/siteId/73/566665"
+            },
+            {
+              "time": "17:10",
+              "version": "IMAX",
+              "performanceId": "C88E2000023PRSBVXE",
+              "numericId": "566666",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C88E2000023PRSBVXE/siteId/73/566666"
+            },
+            {
+              "time": "19:50",
+              "version": "OV",
+              "performanceId": "298E2000023PRSBVXE",
+              "numericId": "566667",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/298E2000023PRSBVXE/siteId/73/566667"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "098E2000023PRSBVXE",
+              "numericId": "566668",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/098E2000023PRSBVXE/siteId/73/566668"
+            },
+            {
+              "time": "20:20",
+              "version": "IMAX",
+              "performanceId": "D88E2000023PRSBVXE",
+              "numericId": "566669",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D88E2000023PRSBVXE/siteId/73/566669"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "IMAX",
+              "performanceId": "A98E2000023PRSBVXE",
+              "numericId": "566670",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A98E2000023PRSBVXE/siteId/73/566670"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "2C8E2000023PRSBVXE",
+              "numericId": "566671",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2C8E2000023PRSBVXE/siteId/73/566671"
+            },
+            {
+              "time": "16:50",
+              "version": "iSense",
+              "performanceId": "2B8E2000023PRSBVXE",
+              "numericId": "566672",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2B8E2000023PRSBVXE/siteId/73/566672"
+            },
+            {
+              "time": "17:00",
+              "version": "OmU",
+              "performanceId": "CCAE2000023PRSBVXE",
+              "numericId": "610787",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CCAE2000023PRSBVXE/siteId/73/610787"
+            },
+            {
+              "time": "17:10",
+              "version": "IMAX",
+              "performanceId": "0A8E2000023PRSBVXE",
+              "numericId": "566673",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0A8E2000023PRSBVXE/siteId/73/566673"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "9B8E2000023PRSBVXE",
+              "numericId": "566674",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9B8E2000023PRSBVXE/siteId/73/566674"
+            },
+            {
+              "time": "20:15",
+              "version": "OV",
+              "performanceId": "51BE2000023PRSBVXE",
+              "numericId": "610793",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/51BE2000023PRSBVXE/siteId/73/610793"
+            },
+            {
+              "time": "20:20",
+              "version": "IMAX",
+              "performanceId": "6A8E2000023PRSBVXE",
+              "numericId": "566675",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6A8E2000023PRSBVXE/siteId/73/566675"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "IMAX",
+              "performanceId": "B98E2000023PRSBVXE",
+              "numericId": "566676",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/B98E2000023PRSBVXE/siteId/73/566676"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "3C8E2000023PRSBVXE",
+              "numericId": "566677",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3C8E2000023PRSBVXE/siteId/73/566677"
+            },
+            {
+              "time": "16:50",
+              "version": "iSense",
+              "performanceId": "3B8E2000023PRSBVXE",
+              "numericId": "566678",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3B8E2000023PRSBVXE/siteId/73/566678"
+            },
+            {
+              "time": "17:10",
+              "version": "IMAX",
+              "performanceId": "1A8E2000023PRSBVXE",
+              "numericId": "566679",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1A8E2000023PRSBVXE/siteId/73/566679"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "AB8E2000023PRSBVXE",
+              "numericId": "566680",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/AB8E2000023PRSBVXE/siteId/73/566680"
+            },
+            {
+              "time": "20:20",
+              "version": "IMAX",
+              "performanceId": "7A8E2000023PRSBVXE",
+              "numericId": "566681",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7A8E2000023PRSBVXE/siteId/73/566681"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "70BE2000023PRSBVXE",
+              "numericId": "610815",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/70BE2000023PRSBVXE/siteId/73/610815"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:30",
+              "version": "IMAX",
+              "performanceId": "698E2000023PRSBVXE",
+              "numericId": "566682",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/698E2000023PRSBVXE/siteId/73/566682"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "4C8E2000023PRSBVXE",
+              "numericId": "566684",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4C8E2000023PRSBVXE/siteId/73/566684"
+            },
+            {
+              "time": "16:40",
+              "version": "IMAX",
+              "performanceId": "798E2000023PRSBVXE",
+              "numericId": "566685",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/798E2000023PRSBVXE/siteId/73/566685"
+            },
+            {
+              "time": "16:50",
+              "version": "iSense",
+              "performanceId": "4B8E2000023PRSBVXE",
+              "numericId": "566686",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4B8E2000023PRSBVXE/siteId/73/566686"
+            },
+            {
+              "time": "19:50",
+              "version": "IMAX",
+              "performanceId": "898E2000023PRSBVXE",
+              "numericId": "566688",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/898E2000023PRSBVXE/siteId/73/566688"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "BB8E2000023PRSBVXE",
+              "numericId": "566689",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/BB8E2000023PRSBVXE/siteId/73/566689"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "80BE2000023PRSBVXE",
+              "numericId": "610824",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/80BE2000023PRSBVXE/siteId/73/610824"
+            },
+            {
+              "time": "22:45",
+              "version": "OmU",
+              "performanceId": "EFAE2000023PRSBVXE",
+              "numericId": "610825",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/EFAE2000023PRSBVXE/siteId/73/610825"
+            },
+            {
+              "time": "23:00",
+              "version": "IMAX",
+              "performanceId": "998E2000023PRSBVXE",
+              "numericId": "566690",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/998E2000023PRSBVXE/siteId/73/566690"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "11:10",
+              "version": "",
+              "performanceId": "C1BE2000023PRSBVXE",
+              "numericId": "610847",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C1BE2000023PRSBVXE/siteId/73/610847"
+            },
+            {
+              "time": "14:00",
+              "version": "IMAX",
+              "performanceId": "C98E2000023PRSBVXE",
+              "numericId": "566691",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C98E2000023PRSBVXE/siteId/73/566691"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "5C8E2000023PRSBVXE",
+              "numericId": "566692",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5C8E2000023PRSBVXE/siteId/73/566692"
+            },
+            {
+              "time": "16:50",
+              "version": "iSense",
+              "performanceId": "5B8E2000023PRSBVXE",
+              "numericId": "566693",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5B8E2000023PRSBVXE/siteId/73/566693"
+            },
+            {
+              "time": "17:10",
+              "version": "IMAX",
+              "performanceId": "2A8E2000023PRSBVXE",
+              "numericId": "566694",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2A8E2000023PRSBVXE/siteId/73/566694"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "CB8E2000023PRSBVXE",
+              "numericId": "566695",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CB8E2000023PRSBVXE/siteId/73/566695"
+            },
+            {
+              "time": "20:20",
+              "version": "IMAX OV",
+              "performanceId": "EA8E2000023PRSBVXE",
+              "numericId": "566696",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/EA8E2000023PRSBVXE/siteId/73/566696"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "IMAX",
+              "performanceId": "D98E2000023PRSBVXE",
+              "numericId": "566697",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D98E2000023PRSBVXE/siteId/73/566697"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "6C8E2000023PRSBVXE",
+              "numericId": "566698",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6C8E2000023PRSBVXE/siteId/73/566698"
+            },
+            {
+              "time": "16:50",
+              "version": "iSense",
+              "performanceId": "6B8E2000023PRSBVXE",
+              "numericId": "566699",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6B8E2000023PRSBVXE/siteId/73/566699"
+            },
+            {
+              "time": "17:00",
+              "version": "OV",
+              "performanceId": "61BE2000023PRSBVXE",
+              "numericId": "610883",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/61BE2000023PRSBVXE/siteId/73/610883"
+            },
+            {
+              "time": "17:10",
+              "version": "IMAX",
+              "performanceId": "3A8E2000023PRSBVXE",
+              "numericId": "566700",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3A8E2000023PRSBVXE/siteId/73/566700"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "DB8E2000023PRSBVXE",
+              "numericId": "566701",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DB8E2000023PRSBVXE/siteId/73/566701"
+            },
+            {
+              "time": "20:10",
+              "version": "OmU",
+              "performanceId": "FFAE2000023PRSBVXE",
+              "numericId": "610868",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FFAE2000023PRSBVXE/siteId/73/610868"
+            },
+            {
+              "time": "20:20",
+              "version": "IMAX",
+              "performanceId": "8A8E2000023PRSBVXE",
+              "numericId": "566702",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8A8E2000023PRSBVXE/siteId/73/566702"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "IMAX",
+              "performanceId": "E98E2000023PRSBVXE",
+              "numericId": "566708",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E98E2000023PRSBVXE/siteId/73/566708"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "7C8E2000023PRSBVXE",
+              "numericId": "566703",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7C8E2000023PRSBVXE/siteId/73/566703"
+            },
+            {
+              "time": "16:50",
+              "version": "iSense",
+              "performanceId": "7B8E2000023PRSBVXE",
+              "numericId": "566704",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7B8E2000023PRSBVXE/siteId/73/566704"
+            },
+            {
+              "time": "17:10",
+              "version": "IMAX",
+              "performanceId": "4A8E2000023PRSBVXE",
+              "numericId": "566706",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4A8E2000023PRSBVXE/siteId/73/566706"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "EB8E2000023PRSBVXE",
+              "numericId": "566707",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/EB8E2000023PRSBVXE/siteId/73/566707"
+            },
+            {
+              "time": "20:10",
+              "version": "OmU",
+              "performanceId": "00BE2000023PRSBVXE",
+              "numericId": "610895",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/00BE2000023PRSBVXE/siteId/73/610895"
+            },
+            {
+              "time": "20:20",
+              "version": "IMAX",
+              "performanceId": "9A8E2000023PRSBVXE",
+              "numericId": "566705",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9A8E2000023PRSBVXE/siteId/73/566705"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "IMAX",
+              "performanceId": "F98E2000023PRSBVXE",
+              "numericId": "566709",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F98E2000023PRSBVXE/siteId/73/566709"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "8C8E2000023PRSBVXE",
+              "numericId": "566710",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8C8E2000023PRSBVXE/siteId/73/566710"
+            },
+            {
+              "time": "16:50",
+              "version": "iSense",
+              "performanceId": "8B8E2000023PRSBVXE",
+              "numericId": "566711",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8B8E2000023PRSBVXE/siteId/73/566711"
+            },
+            {
+              "time": "17:00",
+              "version": "OmU",
+              "performanceId": "DCAE2000023PRSBVXE",
+              "numericId": "610913",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DCAE2000023PRSBVXE/siteId/73/610913"
+            },
+            {
+              "time": "17:10",
+              "version": "IMAX",
+              "performanceId": "5A8E2000023PRSBVXE",
+              "numericId": "566712",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5A8E2000023PRSBVXE/siteId/73/566712"
+            },
+            {
+              "time": "20:20",
+              "version": "IMAX",
+              "performanceId": "AA8E2000023PRSBVXE",
+              "numericId": "566714",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/AA8E2000023PRSBVXE/siteId/73/566714"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "90BE2000023PRSBVXE",
+              "numericId": "610922",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/90BE2000023PRSBVXE/siteId/73/610922"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-21T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Der Teufel trägt Prada 2",
+      "slug": "der-teufel-traegt-prada-2",
+      "filmId": "411832",
+      "filmUrl": "https://www.uci-kinowelt.de/film/der-teufel-traegt-prada-2/411832/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2277/image-thumb__2277__poster/411832.f4e025c2.jpg",
+      "genre": "Komödie, Drama",
+      "fsk": "0",
+      "runtime": "118",
+      "director": "David Frankel",
+      "cast": "Meryl Streep, Anne Hathaway, Stanley Tucci",
+      "description": "Fast zwanzig Jahre nach ihren legendären Auftritten als Miranda, Andy, Emily und Nigel kehren Meryl Streep, Anne Hathaway, Emily Blunt und Stanley Tucci zu den Fashion-Hotspots von New York City und in die eleganten Büros des Runway Magazins zurück - in der mit Spannung erwarteten Fortsetzung des Film-Phänomens von 2006, das eine ganze Generation geprägt hat. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "F56E2000023PRSBVXE",
+              "numericId": "510314",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F56E2000023PRSBVXE/siteId/73/510314"
+            },
+            {
+              "time": "20:15",
+              "version": "OV",
+              "performanceId": "47AE2000023PRSBVXE",
+              "numericId": "599478",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/47AE2000023PRSBVXE/siteId/73/599478"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "3F7E2000023PRSBVXE",
+              "numericId": "550802",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3F7E2000023PRSBVXE/siteId/73/550802"
+            }
+          ]
+        },
+        {
+          "date": "Do., 30.04.",
+          "dateObj": "2026-04-29T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "827E2000023PRSBVXE",
+              "numericId": "532708",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/827E2000023PRSBVXE/siteId/73/532708"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "E27E2000023PRSBVXE",
+              "numericId": "532709",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E27E2000023PRSBVXE/siteId/73/532709"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 01.05.",
+          "dateObj": "2026-04-30T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "927E2000023PRSBVXE",
+              "numericId": "532710",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/927E2000023PRSBVXE/siteId/73/532710"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "F27E2000023PRSBVXE",
+              "numericId": "532711",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F27E2000023PRSBVXE/siteId/73/532711"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 02.05.",
+          "dateObj": "2026-05-01T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "A27E2000023PRSBVXE",
+              "numericId": "532712",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A27E2000023PRSBVXE/siteId/73/532712"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "037E2000023PRSBVXE",
+              "numericId": "532713",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/037E2000023PRSBVXE/siteId/73/532713"
+            }
+          ]
+        },
+        {
+          "date": "So., 03.05.",
+          "dateObj": "2026-05-02T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "B27E2000023PRSBVXE",
+              "numericId": "532714",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/B27E2000023PRSBVXE/siteId/73/532714"
+            },
+            {
+              "time": "20:00",
+              "version": "OV",
+              "performanceId": "437E2000023PRSBVXE",
+              "numericId": "532715",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/437E2000023PRSBVXE/siteId/73/532715"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "137E2000023PRSBVXE",
+              "numericId": "532716",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/137E2000023PRSBVXE/siteId/73/532716"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 04.05.",
+          "dateObj": "2026-05-03T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "C27E2000023PRSBVXE",
+              "numericId": "532717",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C27E2000023PRSBVXE/siteId/73/532717"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "237E2000023PRSBVXE",
+              "numericId": "533142",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/237E2000023PRSBVXE/siteId/73/533142"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 06.05.",
+          "dateObj": "2026-05-05T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "D27E2000023PRSBVXE",
+              "numericId": "532719",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D27E2000023PRSBVXE/siteId/73/532719"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "337E2000023PRSBVXE",
+              "numericId": "532720",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/337E2000023PRSBVXE/siteId/73/532720"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-28T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "slug": "star-wars-the-mandalorian-and-grogu",
+      "filmId": "414843",
+      "filmUrl": "https://www.uci-kinowelt.de/film/star-wars-the-mandalorian-and-grogu/414843/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2384/image-thumb__2384__poster/414843.75aae4e4.jpg",
+      "genre": "Science-Fiction, Abenteuer, Action",
+      "fsk": "?",
+      "runtime": "",
+      "director": "",
+      "cast": "",
+      "description": "Das Dunkle Imperium ist gefallen und die imperialen Kriegsherren sind weiterhin über die Galaxis verstreut. Während die Neue Republik daran arbeitet, alles zu schützen, wofür die Rebellion gekämpft hat, sichern sie sich die Unterstützung des legendären mandalorianischen Kopfgeldjägers Din Djarin und seines jungen Lehrlings Grogu. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Mi., 20.05.",
+          "dateObj": "2026-05-19T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:45",
+              "version": "iSense",
+              "performanceId": "48AE2000023PRSBVXE",
+              "numericId": "602326",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/48AE2000023PRSBVXE/siteId/73/602326"
+            },
+            {
+              "time": "14:15",
+              "version": "IMAX",
+              "performanceId": "88AE2000023PRSBVXE",
+              "numericId": "603004",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/88AE2000023PRSBVXE/siteId/73/603004"
+            },
+            {
+              "time": "17:00",
+              "version": "iSense",
+              "performanceId": "58AE2000023PRSBVXE",
+              "numericId": "602327",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/58AE2000023PRSBVXE/siteId/73/602327"
+            },
+            {
+              "time": "17:30",
+              "version": "IMAX 3D",
+              "performanceId": "28AE2000023PRSBVXE",
+              "numericId": "603001",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/28AE2000023PRSBVXE/siteId/73/603001"
+            },
+            {
+              "time": "20:00",
+              "version": "OV",
+              "performanceId": "78AE2000023PRSBVXE",
+              "numericId": "603002",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/78AE2000023PRSBVXE/siteId/73/603002"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "68AE2000023PRSBVXE",
+              "numericId": "602328",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/68AE2000023PRSBVXE/siteId/73/602328"
+            },
+            {
+              "time": "20:45",
+              "version": "IMAX 3D",
+              "performanceId": "38AE2000023PRSBVXE",
+              "numericId": "603003",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/38AE2000023PRSBVXE/siteId/73/603003"
+            }
+          ]
+        },
+        {
+          "date": "Do., 21.05.",
+          "dateObj": "2026-05-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:45",
+              "version": "iSense",
+              "performanceId": "98AE2000023PRSBVXE",
+              "numericId": "602329",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/98AE2000023PRSBVXE/siteId/73/602329"
+            },
+            {
+              "time": "17:00",
+              "version": "iSense",
+              "performanceId": "09AE2000023PRSBVXE",
+              "numericId": "602330",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/09AE2000023PRSBVXE/siteId/73/602330"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "79AE2000023PRSBVXE",
+              "numericId": "603005",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/79AE2000023PRSBVXE/siteId/73/603005"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 22.05.",
+          "dateObj": "2026-05-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:45",
+              "version": "iSense",
+              "performanceId": "A8AE2000023PRSBVXE",
+              "numericId": "603006",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A8AE2000023PRSBVXE/siteId/73/603006"
+            },
+            {
+              "time": "17:00",
+              "version": "iSense",
+              "performanceId": "19AE2000023PRSBVXE",
+              "numericId": "603007",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/19AE2000023PRSBVXE/siteId/73/603007"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "89AE2000023PRSBVXE",
+              "numericId": "603008",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/89AE2000023PRSBVXE/siteId/73/603008"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 23.05.",
+          "dateObj": "2026-05-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:45",
+              "version": "iSense",
+              "performanceId": "B8AE2000023PRSBVXE",
+              "numericId": "603009",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/B8AE2000023PRSBVXE/siteId/73/603009"
+            },
+            {
+              "time": "17:00",
+              "version": "iSense",
+              "performanceId": "29AE2000023PRSBVXE",
+              "numericId": "603010",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/29AE2000023PRSBVXE/siteId/73/603010"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "99AE2000023PRSBVXE",
+              "numericId": "603011",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/99AE2000023PRSBVXE/siteId/73/603011"
+            }
+          ]
+        },
+        {
+          "date": "So., 24.05.",
+          "dateObj": "2026-05-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:45",
+              "version": "iSense",
+              "performanceId": "C8AE2000023PRSBVXE",
+              "numericId": "603012",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C8AE2000023PRSBVXE/siteId/73/603012"
+            },
+            {
+              "time": "17:00",
+              "version": "iSense",
+              "performanceId": "39AE2000023PRSBVXE",
+              "numericId": "603013",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/39AE2000023PRSBVXE/siteId/73/603013"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "A9AE2000023PRSBVXE",
+              "numericId": "603014",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A9AE2000023PRSBVXE/siteId/73/603014"
+            },
+            {
+              "time": "20:45",
+              "version": "IMAX 3D OV",
+              "performanceId": "F9AE2000023PRSBVXE",
+              "numericId": "603015",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F9AE2000023PRSBVXE/siteId/73/603015"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 25.05.",
+          "dateObj": "2026-05-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:45",
+              "version": "iSense",
+              "performanceId": "D8AE2000023PRSBVXE",
+              "numericId": "603016",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D8AE2000023PRSBVXE/siteId/73/603016"
+            },
+            {
+              "time": "17:00",
+              "version": "iSense",
+              "performanceId": "49AE2000023PRSBVXE",
+              "numericId": "603017",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/49AE2000023PRSBVXE/siteId/73/603017"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "B9AE2000023PRSBVXE",
+              "numericId": "603018",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/B9AE2000023PRSBVXE/siteId/73/603018"
+            }
+          ]
+        },
+        {
+          "date": "Di., 26.05.",
+          "dateObj": "2026-05-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:45",
+              "version": "iSense",
+              "performanceId": "E8AE2000023PRSBVXE",
+              "numericId": "603019",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E8AE2000023PRSBVXE/siteId/73/603019"
+            },
+            {
+              "time": "17:00",
+              "version": "iSense",
+              "performanceId": "59AE2000023PRSBVXE",
+              "numericId": "603020",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/59AE2000023PRSBVXE/siteId/73/603020"
+            },
+            {
+              "time": "20:00",
+              "version": "OV",
+              "performanceId": "E9AE2000023PRSBVXE",
+              "numericId": "603021",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E9AE2000023PRSBVXE/siteId/73/603021"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "C9AE2000023PRSBVXE",
+              "numericId": "603022",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C9AE2000023PRSBVXE/siteId/73/603022"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 27.05.",
+          "dateObj": "2026-05-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:45",
+              "version": "iSense",
+              "performanceId": "F8AE2000023PRSBVXE",
+              "numericId": "603023",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F8AE2000023PRSBVXE/siteId/73/603023"
+            },
+            {
+              "time": "17:00",
+              "version": "iSense",
+              "performanceId": "69AE2000023PRSBVXE",
+              "numericId": "603024",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/69AE2000023PRSBVXE/siteId/73/603024"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "D9AE2000023PRSBVXE",
+              "numericId": "603025",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D9AE2000023PRSBVXE/siteId/73/603025"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-05-19T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
+      "slug": "billie-eilish-hit-me-hard-and-soft-the-tour",
+      "filmId": "416650",
+      "filmUrl": "https://www.uci-kinowelt.de/film/billie-eilish-hit-me-hard-and-soft-the-tour/416650/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2431/image-thumb__2431__poster/416650.0af25ff1.jpg",
+      "genre": "Konzert",
+      "fsk": "?",
+      "runtime": "",
+      "director": "James Cameron, Billie Eilish",
+      "cast": "Billie Eilish",
+      "description": "Aufgenommen während ihrer ausverkauften Welttournee, bringt BILLIE EILISH - HIT ME HARD AND SOFT: THE TOUR (LIVE IN 3D) ein innovatives neues Konzerterlebnis einer der gefeiertsten und erfolgreichsten Künstlerinnen ihrer Generation auf die große Leinwand. Der Film wird in immersivem 3D präsentiert und wurde von den Oscar®-Preisträger*innen James Cameron und Billie Eilish inszeniert. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 05.05.",
+          "dateObj": "2026-05-04T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "iSense 3D",
+              "performanceId": "F7AE2000023PRSBVXE",
+              "numericId": "600504",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F7AE2000023PRSBVXE/siteId/73/600504"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense 3D",
+              "performanceId": "08AE2000023PRSBVXE",
+              "numericId": "600505",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/08AE2000023PRSBVXE/siteId/73/600505"
+            }
+          ]
+        },
+        {
+          "date": "Do., 07.05.",
+          "dateObj": "2026-05-06T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "iSense 3D OV",
+              "performanceId": "A7AE2000023PRSBVXE",
+              "numericId": "600506",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A7AE2000023PRSBVXE/siteId/73/600506"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense 3D",
+              "performanceId": "67AE2000023PRSBVXE",
+              "numericId": "600507",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/67AE2000023PRSBVXE/siteId/73/600507"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 08.05.",
+          "dateObj": "2026-05-07T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "iSense 3D",
+              "performanceId": "77AE2000023PRSBVXE",
+              "numericId": "600508",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/77AE2000023PRSBVXE/siteId/73/600508"
+            },
+            {
+              "time": "20:00",
+              "version": "iSense OmU",
+              "performanceId": "57AE2000023PRSBVXE",
+              "numericId": "600509",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/57AE2000023PRSBVXE/siteId/73/600509"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 09.05.",
+          "dateObj": "2026-05-08T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "iSense 3D",
+              "performanceId": "87AE2000023PRSBVXE",
+              "numericId": "600510",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/87AE2000023PRSBVXE/siteId/73/600510"
+            }
+          ]
+        },
+        {
+          "date": "So., 10.05.",
+          "dateObj": "2026-05-09T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "iSense 3D",
+              "performanceId": "97AE2000023PRSBVXE",
+              "numericId": "600511",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/97AE2000023PRSBVXE/siteId/73/600511"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-05-04T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Der Super Mario Galaxy Film",
+      "slug": "der-super-mario-galaxy-film",
+      "filmId": "414542",
+      "filmUrl": "https://www.uci-kinowelt.de/film/der-super-mario-galaxy-film/414542/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2265/image-thumb__2265__poster/414542.2503bd2c.jpg",
+      "genre": "Animation",
+      "fsk": "6",
+      "runtime": "98",
+      "director": "Aaron Horvath, Michael Jelenic",
+      "cast": "",
+      "description": "Die Brüder Mario und Luigi sowie Prinzessin Peach und Toad erleben ein neues Abenteuer. Geleitet von mysteriösen Sternkatapulten, reisen sie durch die Galaxie. Dabei landen sie auf verschiedenen Planeten, wo sie es mit einem neuen Gegner zu tun bekommen, aber auch auf neue Freunde treffen. (vf)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "3D",
+              "performanceId": "45AE2000023PRSBVXE",
+              "numericId": "589686",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/45AE2000023PRSBVXE/siteId/73/589686"
+            },
+            {
+              "time": "15:00",
+              "version": "iSense",
+              "performanceId": "92AE2000023PRSBVXE",
+              "numericId": "589692",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/92AE2000023PRSBVXE/siteId/73/589692"
+            },
+            {
+              "time": "16:40",
+              "version": "3D",
+              "performanceId": "85AE2000023PRSBVXE",
+              "numericId": "589673",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/85AE2000023PRSBVXE/siteId/73/589673"
+            },
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "86AE2000023PRSBVXE",
+              "numericId": "589678",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/86AE2000023PRSBVXE/siteId/73/589678"
+            },
+            {
+              "time": "17:45",
+              "version": "iSense",
+              "performanceId": "E2AE2000023PRSBVXE",
+              "numericId": "589666",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E2AE2000023PRSBVXE/siteId/73/589666"
+            },
+            {
+              "time": "19:45",
+              "version": "3D",
+              "performanceId": "D3AE2000023PRSBVXE",
+              "numericId": "589680",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D3AE2000023PRSBVXE/siteId/73/589680"
+            },
+            {
+              "time": "20:30",
+              "version": "iSense",
+              "performanceId": "43AE2000023PRSBVXE",
+              "numericId": "589670",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/43AE2000023PRSBVXE/siteId/73/589670"
+            },
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "56AE2000023PRSBVXE",
+              "numericId": "608975",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/56AE2000023PRSBVXE/siteId/73/608975"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "iSense",
+              "performanceId": "32AE2000023PRSBVXE",
+              "numericId": "589703",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/32AE2000023PRSBVXE/siteId/73/589703"
+            },
+            {
+              "time": "14:15",
+              "version": "3D",
+              "performanceId": "53AE2000023PRSBVXE",
+              "numericId": "589693",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/53AE2000023PRSBVXE/siteId/73/589693"
+            },
+            {
+              "time": "17:00",
+              "version": "3D",
+              "performanceId": "73AE2000023PRSBVXE",
+              "numericId": "589706",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/73AE2000023PRSBVXE/siteId/73/589706"
+            },
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "9E9E2000023PRSBVXE",
+              "numericId": "589708",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9E9E2000023PRSBVXE/siteId/73/589708"
+            },
+            {
+              "time": "19:45",
+              "version": "3D",
+              "performanceId": "E3AE2000023PRSBVXE",
+              "numericId": "589711",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E3AE2000023PRSBVXE/siteId/73/589711"
+            },
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "AE9E2000023PRSBVXE",
+              "numericId": "589696",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/AE9E2000023PRSBVXE/siteId/73/589696"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "iSense",
+              "performanceId": "C0BE2000023PRSBVXE",
+              "numericId": "610480",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C0BE2000023PRSBVXE/siteId/73/610480"
+            },
+            {
+              "time": "14:40",
+              "version": "3D",
+              "performanceId": "8AAE2000023PRSBVXE",
+              "numericId": "610797",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8AAE2000023PRSBVXE/siteId/73/610797"
+            },
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "1AAE2000023PRSBVXE",
+              "numericId": "610789",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1AAE2000023PRSBVXE/siteId/73/610789"
+            },
+            {
+              "time": "17:45",
+              "version": "3D",
+              "performanceId": "EAAE2000023PRSBVXE",
+              "numericId": "610790",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/EAAE2000023PRSBVXE/siteId/73/610790"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "DDAE2000023PRSBVXE",
+              "numericId": "610795",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DDAE2000023PRSBVXE/siteId/73/610795"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "iSense",
+              "performanceId": "D0BE2000023PRSBVXE",
+              "numericId": "610813",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D0BE2000023PRSBVXE/siteId/73/610813"
+            },
+            {
+              "time": "14:40",
+              "version": "3D",
+              "performanceId": "9AAE2000023PRSBVXE",
+              "numericId": "610819",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9AAE2000023PRSBVXE/siteId/73/610819"
+            },
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "2AAE2000023PRSBVXE",
+              "numericId": "610804",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2AAE2000023PRSBVXE/siteId/73/610804"
+            },
+            {
+              "time": "17:45",
+              "version": "3D",
+              "performanceId": "FAAE2000023PRSBVXE",
+              "numericId": "610805",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FAAE2000023PRSBVXE/siteId/73/610805"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "EDAE2000023PRSBVXE",
+              "numericId": "610816",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/EDAE2000023PRSBVXE/siteId/73/610816"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "iSense",
+              "performanceId": "E0BE2000023PRSBVXE",
+              "numericId": "610834",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E0BE2000023PRSBVXE/siteId/73/610834"
+            },
+            {
+              "time": "14:40",
+              "version": "3D",
+              "performanceId": "AAAE2000023PRSBVXE",
+              "numericId": "610836",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/AAAE2000023PRSBVXE/siteId/73/610836"
+            },
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "3AAE2000023PRSBVXE",
+              "numericId": "610840",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3AAE2000023PRSBVXE/siteId/73/610840"
+            },
+            {
+              "time": "17:45",
+              "version": "3D",
+              "performanceId": "0BAE2000023PRSBVXE",
+              "numericId": "610841",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0BAE2000023PRSBVXE/siteId/73/610841"
+            },
+            {
+              "time": "19:30",
+              "version": "",
+              "performanceId": "ACAE2000023PRSBVXE",
+              "numericId": "610843",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/ACAE2000023PRSBVXE/siteId/73/610843"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "11:15",
+              "version": "IMAX",
+              "performanceId": "6BAE2000023PRSBVXE",
+              "numericId": "610848",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6BAE2000023PRSBVXE/siteId/73/610848"
+            },
+            {
+              "time": "11:30",
+              "version": "iSense",
+              "performanceId": "B0BE2000023PRSBVXE",
+              "numericId": "610849",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/B0BE2000023PRSBVXE/siteId/73/610849"
+            },
+            {
+              "time": "14:10",
+              "version": "iSense",
+              "performanceId": "F0BE2000023PRSBVXE",
+              "numericId": "610855",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F0BE2000023PRSBVXE/siteId/73/610855"
+            },
+            {
+              "time": "14:40",
+              "version": "3D",
+              "performanceId": "BAAE2000023PRSBVXE",
+              "numericId": "610856",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/BAAE2000023PRSBVXE/siteId/73/610856"
+            },
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "4AAE2000023PRSBVXE",
+              "numericId": "610861",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4AAE2000023PRSBVXE/siteId/73/610861"
+            },
+            {
+              "time": "17:45",
+              "version": "3D",
+              "performanceId": "1BAE2000023PRSBVXE",
+              "numericId": "610862",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1BAE2000023PRSBVXE/siteId/73/610862"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "FDAE2000023PRSBVXE",
+              "numericId": "610844",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FDAE2000023PRSBVXE/siteId/73/610844"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "iSense",
+              "performanceId": "01BE2000023PRSBVXE",
+              "numericId": "610876",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/01BE2000023PRSBVXE/siteId/73/610876"
+            },
+            {
+              "time": "14:40",
+              "version": "3D",
+              "performanceId": "CAAE2000023PRSBVXE",
+              "numericId": "610879",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CAAE2000023PRSBVXE/siteId/73/610879"
+            },
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "5AAE2000023PRSBVXE",
+              "numericId": "610885",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5AAE2000023PRSBVXE/siteId/73/610885"
+            },
+            {
+              "time": "17:45",
+              "version": "3D",
+              "performanceId": "2BAE2000023PRSBVXE",
+              "numericId": "610886",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2BAE2000023PRSBVXE/siteId/73/610886"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "0EAE2000023PRSBVXE",
+              "numericId": "610873",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0EAE2000023PRSBVXE/siteId/73/610873"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "iSense",
+              "performanceId": "11BE2000023PRSBVXE",
+              "numericId": "610896",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/11BE2000023PRSBVXE/siteId/73/610896"
+            },
+            {
+              "time": "14:20",
+              "version": "3D",
+              "performanceId": "7AAE2000023PRSBVXE",
+              "numericId": "610901",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7AAE2000023PRSBVXE/siteId/73/610901"
+            },
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "AEAE2000023PRSBVXE",
+              "numericId": "610892",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/AEAE2000023PRSBVXE/siteId/73/610892"
+            },
+            {
+              "time": "17:30",
+              "version": "3D",
+              "performanceId": "31BE2000023PRSBVXE",
+              "numericId": "610899",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/31BE2000023PRSBVXE/siteId/73/610899"
+            },
+            {
+              "time": "19:50",
+              "version": "",
+              "performanceId": "BEAE2000023PRSBVXE",
+              "numericId": "610891",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/BEAE2000023PRSBVXE/siteId/73/610891"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "iSense",
+              "performanceId": "21BE2000023PRSBVXE",
+              "numericId": "610906",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/21BE2000023PRSBVXE/siteId/73/610906"
+            },
+            {
+              "time": "14:40",
+              "version": "3D",
+              "performanceId": "DAAE2000023PRSBVXE",
+              "numericId": "610908",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DAAE2000023PRSBVXE/siteId/73/610908"
+            },
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "6AAE2000023PRSBVXE",
+              "numericId": "610916",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6AAE2000023PRSBVXE/siteId/73/610916"
+            },
+            {
+              "time": "17:45",
+              "version": "3D",
+              "performanceId": "3BAE2000023PRSBVXE",
+              "numericId": "610917",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3BAE2000023PRSBVXE/siteId/73/610917"
+            },
+            {
+              "time": "20:15",
+              "version": "",
+              "performanceId": "BCAE2000023PRSBVXE",
+              "numericId": "610921",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/BCAE2000023PRSBVXE/siteId/73/610921"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Der Astronaut - Project Hail Mary",
+      "slug": "der-astronaut-project-hail-mary",
+      "filmId": "412578",
+      "filmUrl": "https://www.uci-kinowelt.de/film/der-astronaut-project-hail-mary/412578/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2228/image-thumb__2228__poster/412578.63e3f47d.jpg",
+      "genre": "Science-Fiction",
+      "fsk": "12",
+      "runtime": "156",
+      "director": "Phil Lord, Christopher Miller",
+      "cast": "Ryan Gosling, Liz Kingsman, Lionel Boyce, Sandra Hüller",
+      "description": "Der Naturwissenschaftslehrer Ryland Grace (RYAN GOSLING) wacht eines Tages auf einem Raumschiff auf - Lichtjahre von zu Hause entfernt und ohne Erinnerung daran, wer er ist oder wie er dorthin gekommen ist. Als sein Gedächtnis nach und nach zurückkehrt, findet er heraus, was seine Mission ist: Er soll das Rätsel um eine mysteriöse Substanz lösen, die dazu führt, dass die Sonne erlischt. Um alles und jeden auf der Erde vor dem Aussterben zu bewahren, muss er auf sein wissenschaftliches Fachwissen und einige unorthodoxe Ideen zurückgreifen. Dabei führt eine unerwartete Freundschaft dazu, dass er all dies vielleicht nicht ganz allein tun muss... (Text: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:05",
+              "version": "",
+              "performanceId": "CC9E2000023PRSBVXE",
+              "numericId": "589687",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CC9E2000023PRSBVXE/siteId/73/589687"
+            },
+            {
+              "time": "16:30",
+              "version": "",
+              "performanceId": "CB9E2000023PRSBVXE",
+              "numericId": "589671",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CB9E2000023PRSBVXE/siteId/73/589671"
+            },
+            {
+              "time": "19:30",
+              "version": "",
+              "performanceId": "06AE2000023PRSBVXE",
+              "numericId": "589674",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/06AE2000023PRSBVXE/siteId/73/589674"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:05",
+              "version": "",
+              "performanceId": "DC9E2000023PRSBVXE",
+              "numericId": "589701",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DC9E2000023PRSBVXE/siteId/73/589701"
+            },
+            {
+              "time": "16:30",
+              "version": "",
+              "performanceId": "DB9E2000023PRSBVXE",
+              "numericId": "589700",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DB9E2000023PRSBVXE/siteId/73/589700"
+            },
+            {
+              "time": "19:50",
+              "version": "",
+              "performanceId": "27AE2000023PRSBVXE",
+              "numericId": "589712",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/27AE2000023PRSBVXE/siteId/73/589712"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:40",
+              "version": "",
+              "performanceId": "D1BE2000023PRSBVXE",
+              "numericId": "610799",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D1BE2000023PRSBVXE/siteId/73/610799"
+            },
+            {
+              "time": "19:45",
+              "version": "",
+              "performanceId": "4EAE2000023PRSBVXE",
+              "numericId": "610794",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4EAE2000023PRSBVXE/siteId/73/610794"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:40",
+              "version": "",
+              "performanceId": "E1BE2000023PRSBVXE",
+              "numericId": "610801",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E1BE2000023PRSBVXE/siteId/73/610801"
+            },
+            {
+              "time": "19:45",
+              "version": "",
+              "performanceId": "5EAE2000023PRSBVXE",
+              "numericId": "610808",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5EAE2000023PRSBVXE/siteId/73/610808"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:40",
+              "version": "",
+              "performanceId": "F1BE2000023PRSBVXE",
+              "numericId": "610838",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F1BE2000023PRSBVXE/siteId/73/610838"
+            },
+            {
+              "time": "19:20",
+              "version": "",
+              "performanceId": "3EAE2000023PRSBVXE",
+              "numericId": "610842",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3EAE2000023PRSBVXE/siteId/73/610842"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:40",
+              "version": "",
+              "performanceId": "02BE2000023PRSBVXE",
+              "numericId": "610858",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/02BE2000023PRSBVXE/siteId/73/610858"
+            },
+            {
+              "time": "19:45",
+              "version": "",
+              "performanceId": "6EAE2000023PRSBVXE",
+              "numericId": "610864",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6EAE2000023PRSBVXE/siteId/73/610864"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:40",
+              "version": "",
+              "performanceId": "12BE2000023PRSBVXE",
+              "numericId": "610881",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/12BE2000023PRSBVXE/siteId/73/610881"
+            },
+            {
+              "time": "19:45",
+              "version": "",
+              "performanceId": "7EAE2000023PRSBVXE",
+              "numericId": "610888",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7EAE2000023PRSBVXE/siteId/73/610888"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:40",
+              "version": "",
+              "performanceId": "22BE2000023PRSBVXE",
+              "numericId": "610889",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/22BE2000023PRSBVXE/siteId/73/610889"
+            },
+            {
+              "time": "19:45",
+              "version": "",
+              "performanceId": "8EAE2000023PRSBVXE",
+              "numericId": "610890",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8EAE2000023PRSBVXE/siteId/73/610890"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:40",
+              "version": "",
+              "performanceId": "32BE2000023PRSBVXE",
+              "numericId": "610911",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/32BE2000023PRSBVXE/siteId/73/610911"
+            },
+            {
+              "time": "19:45",
+              "version": "",
+              "performanceId": "9EAE2000023PRSBVXE",
+              "numericId": "610918",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9EAE2000023PRSBVXE/siteId/73/610918"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Lee Cronin's The Mummy",
+      "slug": "lee-cronin-s-the-mummy",
+      "filmId": "407926",
+      "filmUrl": "https://www.uci-kinowelt.de/film/lee-cronin-s-the-mummy/407926/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2301/image-thumb__2301__poster/407926.f14380fd.jpg",
+      "genre": "Horrorfilm",
+      "fsk": "18",
+      "runtime": "134",
+      "director": "Lee Cronin",
+      "cast": "Jack Reynor, Laia Costa, Shylo Molina",
+      "description": "Die junge Tochter eines Journalisten verschwindet spurlos in der Wüste. Die zerrüttete Familie ist fassungslos, als das Mädchen acht Jahre später plötzlich wieder bei ihnen auftaucht. Doch was eigentlich ein freudiges Wiedersehen sein sollte, verwandelt sich schnell in einen wahren Albtraum. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "19:40",
+              "version": "",
+              "performanceId": "E4AE2000023PRSBVXE",
+              "numericId": "589677",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E4AE2000023PRSBVXE/siteId/73/589677"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:15",
+              "version": "",
+              "performanceId": "02AE2000023PRSBVXE",
+              "numericId": "589699",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/02AE2000023PRSBVXE/siteId/73/589699"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "7DAE2000023PRSBVXE",
+              "numericId": "610786",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7DAE2000023PRSBVXE/siteId/73/610786"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "8DAE2000023PRSBVXE",
+              "numericId": "610811",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8DAE2000023PRSBVXE/siteId/73/610811"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "9DAE2000023PRSBVXE",
+              "numericId": "610822",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9DAE2000023PRSBVXE/siteId/73/610822"
+            },
+            {
+              "time": "23:10",
+              "version": "iSense",
+              "performanceId": "2EAE2000023PRSBVXE",
+              "numericId": "610828",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2EAE2000023PRSBVXE/siteId/73/610828"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "ADAE2000023PRSBVXE",
+              "numericId": "610866",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/ADAE2000023PRSBVXE/siteId/73/610866"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "BDAE2000023PRSBVXE",
+              "numericId": "610869",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/BDAE2000023PRSBVXE/siteId/73/610869"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "CDAE2000023PRSBVXE",
+              "numericId": "610897",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CDAE2000023PRSBVXE/siteId/73/610897"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "7BAE2000023PRSBVXE",
+              "numericId": "610920",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7BAE2000023PRSBVXE/siteId/73/610920"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Kill Bill: The Whole Bloody Affair",
+      "slug": "kill-bill-the-whole-bloody-affair",
+      "filmId": "417031",
+      "filmUrl": "https://www.uci-kinowelt.de/film/kill-bill-the-whole-bloody-affair/417031/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2337/image-thumb__2337__poster/417031.21c469d3.jpg",
+      "genre": "Action, Thriller",
+      "fsk": "18",
+      "runtime": "275",
+      "director": "Quentin Tarantino",
+      "cast": "Uma Thurman, Lucy Liu, Vivica A. Fox",
+      "description": "In Kultregisseur Quentin Tarantinos Actionmeisterwerk geht Uma Thurman als namenlose Braut auf einen blutdurchtränkten Rachefeldzug. Nachdem ein brutales Attentat ihres Ex-Geliebten Bill (David Carradine) sie ihr ungeborenes Kind gekostet und in ein vierjähriges Koma gestürzt hat, plant die ehemalige Auftragsmörderin nun ihre kompromisslose Vendetta - und kämpft sich Leiche für Leiche zu Bill durch. Denn der Vergeltung an ihrem Peiniger stehen die vier Mitglieder des Deadly Viper Assassination Squads im Weg: Vorstadthausfrau Vernita Green (Vivica A. Fox) und Yakuza-Chefin O-Ren Ishii (Lucy Liu), Bills Bruder Budd (Michael Madsen) und seine rechte Hand, die ruchlose Elle Driver (Daryl Hannah). (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "18:00",
+              "version": "",
+              "performanceId": "0AAE2000023PRSBVXE",
+              "numericId": "610807",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0AAE2000023PRSBVXE/siteId/73/610807"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:40",
+              "version": "",
+              "performanceId": "A0BE2000023PRSBVXE",
+              "numericId": "610831",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A0BE2000023PRSBVXE/siteId/73/610831"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "11:00",
+              "version": "",
+              "performanceId": "1CAE2000023PRSBVXE",
+              "numericId": "610846",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1CAE2000023PRSBVXE/siteId/73/610846"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-23T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "22 Bahnen",
+      "slug": "22-bahnen",
+      "filmId": "406514",
+      "filmUrl": "https://www.uci-kinowelt.de/film/22-bahnen/406514/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/1558/image-thumb__1558__poster/406514.5b88e49f.jpg",
+      "genre": "Drama",
+      "fsk": "12",
+      "runtime": "97",
+      "director": "Mia Maariel Meyer",
+      "cast": "Laura Tonke, Luna Wedler, Jannis Niewöhner, Zoë Baier",
+      "description": "Tildas (Luna Wedler) Tage sind streng durchgetaktet: studieren, an der Supermarktkasse sitzen, schwimmen, sich um ihre kleine Schwester Ida (Zoë Baier) kümmern - und an schlechten Tagen auch um ihre Mutter (Laura Tonke). Zu dritt wohnen sie im traurigsten Haus der Fröhlichstraße in einer Kleinstadt, die Tilda hasst. Ihre Freunde sind längst weg, leben in Amsterdam oder Berlin, nur Tilda ist geblieben. Denn irgendjemand muss für Ida da sein, Geld verdienen, die Verantwortung tragen. Nennenswerte Väter gibt es keine, die Mutter ist alkoholabhängig. Eines Tages aber geraten die Dinge in Bewegung: Tilda bekommt eine Promotion in Berlin in Aussicht gestellt, und es blitzt eine Zukunft auf, die Freiheit verspricht. Und Viktor (Jannis Niewöhner) taucht auf, der große Bruder von Ivan, den Tilda fünf Jahre zuvor verloren hat. Viktor, der - genau wie sie - immer 22 Bahnen schwimmt. Doch als Tilda schon beinahe glaubt, es könnte alles gut werden, gerät die Situation zu Hause vollends außer Kontrolle ... (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:55",
+              "version": "",
+              "performanceId": "ED9E2000023PRSBVXE",
+              "numericId": "589676",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/ED9E2000023PRSBVXE/siteId/73/589676"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:15",
+              "version": "",
+              "performanceId": "8FAE2000023PRSBVXE",
+              "numericId": "610894",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8FAE2000023PRSBVXE/siteId/73/610894"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Bluey im Kino: \"Playdates\" - Kollektion",
+      "slug": "bluey-im-kino-playdates-kollektion",
+      "filmId": "417307",
+      "filmUrl": "https://www.uci-kinowelt.de/film/bluey-im-kino-playdates-kollektion/417307/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2296/image-thumb__2296__poster/417307.eeadbff5.jpg",
+      "genre": "Animation",
+      "fsk": "0",
+      "runtime": "54",
+      "director": "",
+      "cast": "",
+      "description": "Lasst uns spielen! Bluey, die neugierige und fantasievolle Hündin erobert auch die große Leinwand. Die Playdates Kollektion zeigt einige von Blueys Lieblingsspielen wie Das Schattenspiel und Oktopus und hebt besondere Freundschaftsmomente in Episoden wie Zirkus und Rutschbahn hervor - mit ganz viel Freude und Lachen.",
+      "showtimes": [
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "15:30",
+              "version": "",
+              "performanceId": "FF9E2000023PRSBVXE",
+              "numericId": "589698",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FF9E2000023PRSBVXE/siteId/73/589698"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "12:10",
+              "version": "",
+              "performanceId": "B1BE2000023PRSBVXE",
+              "numericId": "610853",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/B1BE2000023PRSBVXE/siteId/73/610853"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-21T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Das Drama - Noch mal auf Anfang",
+      "slug": "das-drama-noch-mal-auf-anfang",
+      "filmId": "417079",
+      "filmUrl": "https://www.uci-kinowelt.de/film/das-drama-noch-mal-auf-anfang/417079/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2361/image-thumb__2361__poster/417079.5393fa5d.jpg",
+      "genre": "Drama",
+      "fsk": "12",
+      "runtime": "105",
+      "director": "Kristoffer Borgli",
+      "cast": "Zendaya, Robert Pattinson, Alana Haim",
+      "description": "Ein glücklich verlobtes Paar steht kurz vor der Traumhochzeit - doch in den Tagen vor dem Ja-Wort bröckelt die Fassade. Eine unerwartete Enthüllung wirft nicht nur die Hochzeitsplanung aus der Bahn, sondern alles, was sie über einander zu wissen glauben. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:45",
+              "version": "",
+              "performanceId": "C0AE2000023PRSBVXE",
+              "numericId": "589667",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C0AE2000023PRSBVXE/siteId/73/589667"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:45",
+              "version": "",
+              "performanceId": "D0AE2000023PRSBVXE",
+              "numericId": "589710",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D0AE2000023PRSBVXE/siteId/73/589710"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "9FAE2000023PRSBVXE",
+              "numericId": "610800",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9FAE2000023PRSBVXE/siteId/73/610800"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "AFAE2000023PRSBVXE",
+              "numericId": "610802",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/AFAE2000023PRSBVXE/siteId/73/610802"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "BFAE2000023PRSBVXE",
+              "numericId": "610859",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/BFAE2000023PRSBVXE/siteId/73/610859"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "CFAE2000023PRSBVXE",
+              "numericId": "610882",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CFAE2000023PRSBVXE/siteId/73/610882"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "DFAE2000023PRSBVXE",
+              "numericId": "610912",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DFAE2000023PRSBVXE/siteId/73/610912"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Der Magier im Kreml",
+      "slug": "der-magier-im-kreml",
+      "filmId": "416719",
+      "filmUrl": "https://www.uci-kinowelt.de/film/der-magier-im-kreml/416719/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2357/image-thumb__2357__poster/416719.0d8ef642.jpg",
+      "genre": "Thriller",
+      "fsk": "12",
+      "runtime": "145",
+      "director": "Olivier Assayas",
+      "cast": "Paul Dano, Jude Law, Alicia Vikander",
+      "description": "Russland, Anfang der 1990er Jahre. Die UdSSR ist zusammengebrochen. Mitten im Chaos eines Landes, das sich neu finden muss, macht ein äußerst intelligenter junger Mann, Vadim Baranov, Karriere. Zunächst Avantgarde-Künstler, dann Produzent von Reality-TV-Shows, wird er inoffizieller Berater eines ehemaligen KGB-Agenten, der die absolute Macht an sich reißen soll, dem Mann, der bald als \"Der Zar\" bekannt sein wird, Wladimir Putin. Tief im Herzen des Systems wird Baranov zum Strippenzieher des neuen Russlands und prägt Reden, Sichtweisen und Fantasien. Nur eine Figur entzieht sich seiner Kontrolle: Ksenia, eine freiheitsliebende und unabhängig Frau, die die Möglichkeit der Flucht verkörpert - weit entfernt von politischer Macht und Einfluss.\nFünfzehn Jahre nach seinem Rückzug aus der Öffentlichkeit ist Baranov bereit auszupacken. Was er offenbart, verwischt die Grenzen zwischen Wahrheit und Fiktion, Glaube und Strategie. DER MAGIER IM KREML ist ein Abstieg in die dunklen Korridore der Macht, wo jedes Wort einem Plan dient und den Lauf der Welt verändern kann. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "19:50",
+              "version": "",
+              "performanceId": "20AE2000023PRSBVXE",
+              "numericId": "589682",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/20AE2000023PRSBVXE/siteId/73/589682"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "",
+              "performanceId": "4BAE2000023PRSBVXE",
+              "numericId": "610919",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4BAE2000023PRSBVXE/siteId/73/610919"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Die Eiskönigin - Völlig unverfroren",
+      "slug": "die-eiskoenigin-voellig-unverfroren",
+      "filmId": "251182",
+      "filmUrl": "https://www.uci-kinowelt.de/film/die-eiskoenigin-voellig-unverfroren/251182/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2248/image-thumb__2248__poster/251182.896e5a09.jpg",
+      "genre": "Animation",
+      "fsk": "0",
+      "runtime": "102",
+      "director": "Chris Buck",
+      "cast": "",
+      "description": "Seit das Land von der Eiskönigin in einen ewig währenden, alles erfrierenden Winter gestürzt wurde, leben die Bewohnerinnen und Bewohner des Königsreichs in einer Welt aus Schnee. Die junge Anna macht sich deshalb auf den Weg, um den Bann des Frostes zu brechen und den Menschen Sonne, Licht und Wärme zurückzubringen. Doch ihre Reise wird nicht nur zu einem Abenteuer voller kleiner und großer Gefahren, sondern auch zu einem Wettlauf gegen die Zeit. (j.b.)",
+      "showtimes": [
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "AC8E2000023PRSBVXE",
+              "numericId": "566683",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/AC8E2000023PRSBVXE/siteId/73/566683"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "11:00",
+              "version": "",
+              "performanceId": "BC8E2000023PRSBVXE",
+              "numericId": "566756",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/BC8E2000023PRSBVXE/siteId/73/566756"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-24T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "E.T. - Der Außerirdische",
+      "slug": "e-t-der-ausserirdische",
+      "filmId": "11134",
+      "filmUrl": "https://www.uci-kinowelt.de/film/e-t-der-ausserirdische/11134/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2459/image-thumb__2459__poster/11134.f479a70a.jpg",
+      "genre": "Fantasy, Kinder-/Jugendfilm, Science-Fiction, Abenteuer",
+      "fsk": "6",
+      "runtime": "115",
+      "director": "Steven Spielberg",
+      "cast": "Dee Wallace-Stone, Henry Thomas, Peter Coyote, Robert MacNaughton, Drew Barrymore",
+      "description": "Außerirdische landen auf der Erde, um den Planeten zu erforschen. Sie werden von FBI-Agenten und NASA-Mitarbeitern bei ihrer friedlichen Mission unterbrochen und müssen überstürzt aufbrechen. Eines der außerirdischen Wesen wird in der Hektik zurückgelassen. Es sucht Unterschlupf in der nahegelegen Vorort-Siedlung. Dort wohnt der zehnjähErige Junge Elliott (Henry Thomas) mit seiner Mutter Mary (Dee Wallace-Stone), seinem großen Bruder Michael (Robert MacNaughton) und der kleinen Schwester Gertie (Drew Barrymore). Der Vater hat die Familie verlassen und ist mit einer anderen Frau nach Mexiko gefahren.\n\nAls Elliott den Außerirdischen hinter dem Haus entdeckt, freunden sich die beiden nach dem ersten Schreck schnell an. Elliott tauft seinen neuen Freund auf den Namen E.T., versteckt ihn im Haus und weiht seine Geschwister in das Geheimnis ein. Zwischen dem Jungen und dem Außerirdische etabliert sich eine besondere telepathische Verbindung - sie teilen ihre Gedanken und Gefühle. E.T. hat Heimweh und Elliott will ihm helfen, nach Hause zu kommen. Zugleich sind die Regierungsvertreter unter der Leitung des Wissenschaftlers Keys (Peter Coyote) dem gestrandeten Wesen aus dem All auf der Spur...",
+      "showtimes": [
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "EC8E2000023PRSBVXE",
+              "numericId": "566757",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/EC8E2000023PRSBVXE/siteId/73/566757"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-25T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Für immer ein Teil von dir",
+      "slug": "fuer-immer-ein-teil-von-dir",
+      "filmId": "406064",
+      "filmUrl": "https://www.uci-kinowelt.de/film/fuer-immer-ein-teil-von-dir/406064/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2156/image-thumb__2156__poster/406064.5a173d8e.jpg",
+      "genre": "Drama",
+      "fsk": "12",
+      "runtime": "114",
+      "director": "Vanessa Caswill",
+      "cast": "Maika Monroe, Tyriq Withers, Rudy Pankow",
+      "description": "Nur die Erinnerung bleibt ... FÜR IMMER EIN TEIL VON DIR erzählt die bewegende Geschichte von Kenna (Maika Monroe), die nach einem tragischen Unfall ihre große Liebe verliert. Als sie nach Jahren in ihre Heimatstadt zurückkehrt, wagt sie einen Neuanfang. Ein berührender Film über Vergebung und die Kraft einer Liebe, die selbst die hoffnungslosesten Herzen wieder heilen kann. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:50",
+              "version": "",
+              "performanceId": "5D9E2000023PRSBVXE",
+              "numericId": "589675",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5D9E2000023PRSBVXE/siteId/73/589675"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:50",
+              "version": "",
+              "performanceId": "6D9E2000023PRSBVXE",
+              "numericId": "589705",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6D9E2000023PRSBVXE/siteId/73/589705"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "DBAE2000023PRSBVXE",
+              "numericId": "610479",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DBAE2000023PRSBVXE/siteId/73/610479"
+            },
+            {
+              "time": "17:15",
+              "version": "",
+              "performanceId": "20BE2000023PRSBVXE",
+              "numericId": "610788",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/20BE2000023PRSBVXE/siteId/73/610788"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "EBAE2000023PRSBVXE",
+              "numericId": "610810",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/EBAE2000023PRSBVXE/siteId/73/610810"
+            },
+            {
+              "time": "17:15",
+              "version": "",
+              "performanceId": "30BE2000023PRSBVXE",
+              "numericId": "610803",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/30BE2000023PRSBVXE/siteId/73/610803"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:30",
+              "version": "",
+              "performanceId": "10BE2000023PRSBVXE",
+              "numericId": "610837",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/10BE2000023PRSBVXE/siteId/73/610837"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:15",
+              "version": "",
+              "performanceId": "40BE2000023PRSBVXE",
+              "numericId": "610860",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/40BE2000023PRSBVXE/siteId/73/610860"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "FBAE2000023PRSBVXE",
+              "numericId": "610875",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FBAE2000023PRSBVXE/siteId/73/610875"
+            },
+            {
+              "time": "17:15",
+              "version": "",
+              "performanceId": "50BE2000023PRSBVXE",
+              "numericId": "610884",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/50BE2000023PRSBVXE/siteId/73/610884"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "0CAE2000023PRSBVXE",
+              "numericId": "610905",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0CAE2000023PRSBVXE/siteId/73/610905"
+            },
+            {
+              "time": "17:15",
+              "version": "",
+              "performanceId": "60BE2000023PRSBVXE",
+              "numericId": "610914",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/60BE2000023PRSBVXE/siteId/73/610914"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "G.O.A.T. - Bock auf große Sprünge",
+      "slug": "g-o-a-t-bock-auf-grosse-spruenge",
+      "filmId": "404780",
+      "filmUrl": "https://www.uci-kinowelt.de/film/g-o-a-t-bock-auf-grosse-spruenge/404780/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2096/image-thumb__2096__poster/404780.247618b2.jpg",
+      "genre": "Trickfilm",
+      "fsk": "6",
+      "runtime": "96",
+      "director": "Tyree Dillihay, Adam Rosette",
+      "cast": "",
+      "description": "Will ist ein kleiner Ziegenbock mit großen Träumen, der die einmalige Chance bekommt, einem Profiteam beizutreten und Roarball zu spielen - ein kontaktintensiver Hochleistungssport, bei dem die schnellsten und furchterregendsten Tiere der Welt dominieren. Wills neue Teammitglieder sind daher nicht gerade begeistert, nun eine schmächtige Ziege in ihrer Mannschaft zu haben, doch Will ist wild entschlossen, den Sport zu revolutionieren und ein für alle Mal zu beweisen, dass auch Kleine ganz groß rauskommen können. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "8BAE2000023PRSBVXE",
+              "numericId": "610481",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8BAE2000023PRSBVXE/siteId/73/610481"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "9BAE2000023PRSBVXE",
+              "numericId": "610814",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9BAE2000023PRSBVXE/siteId/73/610814"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "ABAE2000023PRSBVXE",
+              "numericId": "610877",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/ABAE2000023PRSBVXE/siteId/73/610877"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "BBAE2000023PRSBVXE",
+              "numericId": "610898",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/BBAE2000023PRSBVXE/siteId/73/610898"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "CBAE2000023PRSBVXE",
+              "numericId": "610907",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CBAE2000023PRSBVXE/siteId/73/610907"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-22T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Hoppers",
+      "slug": "hoppers",
+      "filmId": "404296",
+      "filmUrl": "https://www.uci-kinowelt.de/film/hoppers/404296/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2128/image-thumb__2128__poster/404296.5caf4ae9.jpg",
+      "genre": "Trickfilm",
+      "fsk": "6",
+      "runtime": "104",
+      "director": "Daniel Chong",
+      "cast": "",
+      "description": "In HOPPERS haben Wissenschaftler entdeckt, wie man menschliches Bewusstsein in lebensechte Robotertiere \"hüpfen\" lassen kann, so dass Menschen mit Tieren als Tieren kommunizieren können! Mit Hilfe der neuen Technologie entdeckt Mabel (Piper Curda) Geheimnisse in der Tierwelt, die alles übertreffen, was sie sich je hätte vorstellen können. Produziert von Nicole Paradis Grindle, sind in HOPPERS auch die Stimmen von Bobby Moynihan (\"Saturday Night Live\") und Emmy- und Golden Globe-Gewinner Jon Hamm (\"Mad Men\") zu hören. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "C6AE2000023PRSBVXE",
+              "numericId": "589689",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C6AE2000023PRSBVXE/siteId/73/589689"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:20",
+              "version": "",
+              "performanceId": "17AE2000023PRSBVXE",
+              "numericId": "589694",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/17AE2000023PRSBVXE/siteId/73/589694"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:30",
+              "version": "",
+              "performanceId": "5CAE2000023PRSBVXE",
+              "numericId": "610482",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5CAE2000023PRSBVXE/siteId/73/610482"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:30",
+              "version": "",
+              "performanceId": "6CAE2000023PRSBVXE",
+              "numericId": "610818",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6CAE2000023PRSBVXE/siteId/73/610818"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "13:50",
+              "version": "",
+              "performanceId": "3CAE2000023PRSBVXE",
+              "numericId": "610832",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3CAE2000023PRSBVXE/siteId/73/610832"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "11:40",
+              "version": "",
+              "performanceId": "41BE2000023PRSBVXE",
+              "numericId": "610850",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/41BE2000023PRSBVXE/siteId/73/610850"
+            },
+            {
+              "time": "13:50",
+              "version": "",
+              "performanceId": "4CAE2000023PRSBVXE",
+              "numericId": "610854",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4CAE2000023PRSBVXE/siteId/73/610854"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:30",
+              "version": "",
+              "performanceId": "7CAE2000023PRSBVXE",
+              "numericId": "610878",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7CAE2000023PRSBVXE/siteId/73/610878"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:30",
+              "version": "",
+              "performanceId": "8CAE2000023PRSBVXE",
+              "numericId": "610902",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8CAE2000023PRSBVXE/siteId/73/610902"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:30",
+              "version": "",
+              "performanceId": "9CAE2000023PRSBVXE",
+              "numericId": "610909",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9CAE2000023PRSBVXE/siteId/73/610909"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Horst Schlämmer sucht das Glück",
+      "slug": "horst-schlaemmer-sucht-das-glueck",
+      "filmId": "408949",
+      "filmUrl": "https://www.uci-kinowelt.de/film/horst-schlaemmer-sucht-das-glueck/408949/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2349/image-thumb__2349__poster/408949.d7189b1b.jpg",
+      "genre": "Komödie, Satire",
+      "fsk": "6",
+      "runtime": "93",
+      "director": "Sven Unterwaldt",
+      "cast": "Hape Kerkeling, Tahnee Schaffarczy, Laura Thomas, Meltem Kaptan",
+      "description": "Horst Schlämmer hat die Faxen dicke: Die Preise steigen, die Stimmung sinkt, die Kneipen schließen. Kurzum: Deutschland hat Rücken! Und zwar im Gesicht. Also geht der stellvertretende Chefredakteur vom \"Grevenbroicher Tagblatt\" auf eine große Reise mit noch größerem Ziel: Er will den Leuten ihr Lächeln zurückbringen! Doch wie wird man glücklich? Schwere Zeiten verlangen nach klaren Antworten - und weil man die in Grevenbroich nicht finden kann, begibt sich Horst Schlämmer auf die Reise seines Lebens: Von Süddeutschland bis Sylt, von Berlin bis Büsum - per Anhalter, Krabbenkutter oder Schienenersatzverkehr. Er trifft Passanten, Promis und Psychologen, fragt knallhart nach und verliert, trotz vieler Rückschläge, nie seine Mission aus den Augen: Die Menschen wieder glücklich zu machen!",
+      "showtimes": [
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:05",
+              "version": "",
+              "performanceId": "7E9E2000023PRSBVXE",
+              "numericId": "589707",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7E9E2000023PRSBVXE/siteId/73/589707"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:50",
+              "version": "",
+              "performanceId": "0DAE2000023PRSBVXE",
+              "numericId": "610798",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0DAE2000023PRSBVXE/siteId/73/610798"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:50",
+              "version": "",
+              "performanceId": "1DAE2000023PRSBVXE",
+              "numericId": "610820",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1DAE2000023PRSBVXE/siteId/73/610820"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "FCAE2000023PRSBVXE",
+              "numericId": "610835",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FCAE2000023PRSBVXE/siteId/73/610835"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:50",
+              "version": "",
+              "performanceId": "2DAE2000023PRSBVXE",
+              "numericId": "610857",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2DAE2000023PRSBVXE/siteId/73/610857"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:50",
+              "version": "",
+              "performanceId": "3DAE2000023PRSBVXE",
+              "numericId": "610880",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3DAE2000023PRSBVXE/siteId/73/610880"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:50",
+              "version": "",
+              "performanceId": "4DAE2000023PRSBVXE",
+              "numericId": "610903",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4DAE2000023PRSBVXE/siteId/73/610903"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:50",
+              "version": "",
+              "performanceId": "5DAE2000023PRSBVXE",
+              "numericId": "610910",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5DAE2000023PRSBVXE/siteId/73/610910"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-21T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "How to Make a Killing: Todsicheres Erbe",
+      "slug": "how-to-make-a-killing-todsicheres-erbe",
+      "filmId": "416629",
+      "filmUrl": "https://www.uci-kinowelt.de/film/how-to-make-a-killing-todsicheres-erbe/416629/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2263/image-thumb__2263__poster/416629.94e094a8.jpg",
+      "genre": "Psycho-Thriller, Komödie, Thriller",
+      "fsk": "12",
+      "runtime": "105",
+      "director": "John Patton Ford",
+      "cast": "Glen Powell, Margaret Qualley, Ed Harris",
+      "description": "Becket Redfellow hat Witz, Stil, Bildung und Charme. Doch eines besitzt er nach wie vor nicht - das milliardenschwere Vermögen, das ihm laut seiner Mutter von Geburt an zusteht. Seine Mutter Mary, einst Erbin des gewaltigen Redfellow-Imperiums, wurde von ihrer einflussreichen Familie bei Beckets Geburt verstoßen und starb völlig verarmt. Jetzt ist ihr charismatischer, vom Drang nach Höherem getriebener Sohn fest entschlossen, all das zurückzuholen, was er für gestohlen hält. Becket entwickelt einen raffiniert-mörderischen Plan, um die sieben Redfellow-Verwandten, die zwischen ihm und dem Familienbesitz stehen, aus dem Weg zu räumen. Während die Erben einer nach dem anderen in einer Reihe von köstlich einfallsreichen \"Unfällen\" ums Leben kommen, muss Becket der Beziehung zu seiner neuen Freundin Ruth gerecht werden und sich gleichzeitig den gefährlich koketten Avancen seiner Jugendliebe Julia stellen.",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:20",
+              "version": "",
+              "performanceId": "F1AE2000023PRSBVXE",
+              "numericId": "589669",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F1AE2000023PRSBVXE/siteId/73/589669"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "81AE2000023PRSBVXE",
+              "numericId": "589709",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/81AE2000023PRSBVXE/siteId/73/589709"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:50",
+              "version": "",
+              "performanceId": "4FAE2000023PRSBVXE",
+              "numericId": "610792",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4FAE2000023PRSBVXE/siteId/73/610792"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:50",
+              "version": "",
+              "performanceId": "5FAE2000023PRSBVXE",
+              "numericId": "610806",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5FAE2000023PRSBVXE/siteId/73/610806"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:45",
+              "version": "",
+              "performanceId": "2FAE2000023PRSBVXE",
+              "numericId": "610839",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2FAE2000023PRSBVXE/siteId/73/610839"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:50",
+              "version": "",
+              "performanceId": "6FAE2000023PRSBVXE",
+              "numericId": "610863",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6FAE2000023PRSBVXE/siteId/73/610863"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:50",
+              "version": "",
+              "performanceId": "7FAE2000023PRSBVXE",
+              "numericId": "610887",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7FAE2000023PRSBVXE/siteId/73/610887"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:15",
+              "version": "",
+              "performanceId": "3FAE2000023PRSBVXE",
+              "numericId": "610915",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3FAE2000023PRSBVXE/siteId/73/610915"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Jazzy - Chaos im Regenwald",
+      "slug": "jazzy-chaos-im-regenwald",
+      "filmId": "417184",
+      "filmUrl": "https://www.uci-kinowelt.de/film/jazzy-chaos-im-regenwald/417184/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2328/image-thumb__2328__poster/417184.d4f7fc7f.jpg",
+      "genre": "Animation, Familienfilm",
+      "fsk": "6",
+      "runtime": "86",
+      "director": "Tim Harper",
+      "cast": "",
+      "description": "Jazzy, ein junges Orang-Utan-Mädchen, wird durch einen Waldbrand von ihren Eltern getrennt. Fortan wächst sie in einem Reservat auf, umgeben von anderen Tieren, die ihre Freunde geworden sind. Eines Abends entschließt sie sich jedoch, ihrem Instinkt zu folgen und sich auf die Suche nach ihrer Familie zu machen. Auf ihrem Abenteuer entdeckt Jazzy die Schönheit der Natur - und wie zerbrechlich diese ist. Jazzy stürzt sich in ein außergewöhnliches Abenteuer, um ihre Eltern zu finden und den Regenwald zu bewahren. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "61AE2000023PRSBVXE",
+              "numericId": "589685",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/61AE2000023PRSBVXE/siteId/73/589685"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "71AE2000023PRSBVXE",
+              "numericId": "589697",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/71AE2000023PRSBVXE/siteId/73/589697"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "12:00",
+              "version": "",
+              "performanceId": "A1BE2000023PRSBVXE",
+              "numericId": "610852",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A1BE2000023PRSBVXE/siteId/73/610852"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Lustiges Pettersson und Findus Mitmachkino 2",
+      "slug": "lustiges-pettersson-und-findus-mitmachkino-2",
+      "filmId": "417214",
+      "filmUrl": "https://www.uci-kinowelt.de/film/lustiges-pettersson-und-findus-mitmachkino-2/417214/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2241/image-thumb__2241__poster/417214.062825b3.jpg",
+      "genre": "Animation, Familienfilm",
+      "fsk": "0",
+      "runtime": "57",
+      "director": "Benjamín Lorenzo, Dirk Hampel, Mirko Drilling",
+      "cast": "",
+      "description": "Pettersson und sein vorlauter Kater Findus melden sich zurück - und laden zum fröhlichen Mitmachkino ein! Auf dem gemütlichen Bauernhof irgendwo in Schweden stürzt sich Findus in neue Abenteuer: Er geht auf Mäusejagd, legt frechen Raben das Handwerk, begegnet dem Mann im Mond und tritschließlich zum großen Wettstreit um die Krone des Kürbis-Königs an. Ein Riesenspaß für kleine und große Findus-Fans! (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "15:30",
+              "version": "",
+              "performanceId": "50AE2000023PRSBVXE",
+              "numericId": "589668",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/50AE2000023PRSBVXE/siteId/73/589668"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "11:45",
+              "version": "",
+              "performanceId": "ECAE2000023PRSBVXE",
+              "numericId": "610851",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/ECAE2000023PRSBVXE/siteId/73/610851"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Mamma Mia!",
+      "slug": "mamma-mia",
+      "filmId": "190182",
+      "filmUrl": "https://www.uci-kinowelt.de/film/mamma-mia/190182/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2172/image-thumb__2172__poster/190182.18ed90dd.jpg",
+      "genre": "Komödie, Musikfilm",
+      "fsk": "0",
+      "runtime": "104",
+      "director": "Phyllida Lloyd",
+      "cast": "Amanda Seyfried, Christine Baranski, Julie Walters, Meryl Streep, Pierce Brosnan",
+      "description": "Sophie hat endlich den Mann ihrer Träume gefunden und möchte mit ihm den Bund fürs Leben eingehen. Doch für die perfekte Hochzeit fehlt ihr vor allem eines: ein Vater. Denn leider hat sie den nie kennen gelernt und so auch niemanden, der sie am schönsten Tag im Leben einer Frau zum Traualter führen könnte. Im Tagebuch ihrer Mutter findet sie jedoch gleich drei Männernamen, die als ihr Erzeuger in Frage kommen würden. Und so lädt sie kurzerhand einfach alle ein. (j.b.)",
+      "showtimes": [
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "16:50",
+              "version": "",
+              "performanceId": "CC8E2000023PRSBVXE",
+              "numericId": "566687",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CC8E2000023PRSBVXE/siteId/73/566687"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-24T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Matrix",
+      "slug": "matrix",
+      "filmId": "32287",
+      "filmUrl": "https://www.uci-kinowelt.de/film/matrix/32287/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2465/image-thumb__2465__poster/32287.97adfe49.jpg",
+      "genre": "Action, Science-Fiction",
+      "fsk": "16",
+      "runtime": "131",
+      "director": "Andy Wachowski, Lana Wachowski",
+      "cast": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, Gloria Foster, Joe Pantoliano, Marcus Chong, Julian Arahanga",
+      "description": "Wir befinden uns im 22. Jahrhundert: Die Erde wird von Maschinen beherrscht, die den Menschen menschliche Realität vorgaukeln. Aber die Welt ist nicht Welt, sondern eine Simulation durch ein Computerprogramm, \"die Matrix\". Gut, daß es dagegen den Widerstandskämpfer Morpheus gibt. Er und seine Mannen kämpfen gegen die Matrix. Und noch besser, daß Morpheus den Computerexperten Thomas Anderson entdeckt hat. Anderson, sein Hacker-Name ist Neo, könnte die Welt von den Maschinen-Unterdrückern befreien und damit zum Erlöser werden. (P.M.)",
+      "showtimes": [
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "19:40",
+              "version": "",
+              "performanceId": "DC8E2000023PRSBVXE",
+              "numericId": "601467",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DC8E2000023PRSBVXE/siteId/73/601467"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-24T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Meine Wiedergeburt als Schleim in einer anderen Welt, Der Film: Tränen des azurblauen Meers",
+      "slug": "meine-wiedergeburt-als-schleim-in-einer-anderen-welt-der-film-traenen-des-azurblauen-meers",
+      "filmId": "417448",
+      "filmUrl": "https://www.uci-kinowelt.de/film/meine-wiedergeburt-als-schleim-in-einer-anderen-welt-der-film-traenen-des-azurblauen-meers/417448/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2373/image-thumb__2373__poster/417448.3b306136.jpg",
+      "genre": "Trickfilm",
+      "fsk": "12",
+      "runtime": "105",
+      "director": "Yasuhito Kikuchi",
+      "cast": "",
+      "description": "Nach dem Fest zur Gründung der Republik Tempest des Dämonenkönigreichs werden Rimuru und seine Gefährten von der Himmlischen Kaiserin Hermesia des großen Elfenreichs - der Magischen Dynastie Sarion - auf ihre private Ferieninsel eingeladen. Während die Gruppe ihren Kurzurlaub genießt, taucht eine geheimnisvolle Frau namens Yura auf. Schon bald entfaltet sich ein neues Ereignis vor der Kulisse des endlosen azurblauen Meeres. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "488E2000023PRSBVXE",
+              "numericId": "565259",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/488E2000023PRSBVXE/siteId/73/565259"
+            },
+            {
+              "time": "17:15",
+              "version": "OmU",
+              "performanceId": "988E2000023PRSBVXE",
+              "numericId": "565260",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/988E2000023PRSBVXE/siteId/73/565260"
+            },
+            {
+              "time": "19:45",
+              "version": "",
+              "performanceId": "588E2000023PRSBVXE",
+              "numericId": "565261",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/588E2000023PRSBVXE/siteId/73/565261"
+            },
+            {
+              "time": "20:00",
+              "version": "OmU",
+              "performanceId": "A88E2000023PRSBVXE",
+              "numericId": "565262",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A88E2000023PRSBVXE/siteId/73/565262"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-27T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Normal",
+      "slug": "normal",
+      "filmId": "417961",
+      "filmUrl": "https://www.uci-kinowelt.de/film/normal/417961/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2363/image-thumb__2363__poster/417961.38402194.jpg",
+      "genre": "Action, Thriller",
+      "fsk": "18",
+      "runtime": "92",
+      "director": "Ben Wheatley",
+      "cast": "Bob Odenkirk, Reena Jolly, Brendan Fletcher",
+      "description": "Eigentlich sollte die vorübergehende Versetzung in die verschlafene Kleinstadt Normal für Sheriff Ulysses (Bob Odenkirk) eine willkommene Auszeit von Eheproblemen und beruflichen Rückschlägen sein. Doch als ein misslungener Banküberfall die trügerische Ruhe der Stadt durcheinanderbringt, wird schnell klar, dass die Bewohner weit mehr zu verbergen haben, als zunächst angenommen. Ulysses merkt plötzlich: Diese Kleinstadt ist alles andere als \"normal\"...",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "1F9E2000023PRSBVXE",
+              "numericId": "589672",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1F9E2000023PRSBVXE/siteId/73/589672"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "2F9E2000023PRSBVXE",
+              "numericId": "589702",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2F9E2000023PRSBVXE/siteId/73/589702"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:40",
+              "version": "",
+              "performanceId": "42BE2000023PRSBVXE",
+              "numericId": "610796",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/42BE2000023PRSBVXE/siteId/73/610796"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "23:15",
+              "version": "",
+              "performanceId": "52BE2000023PRSBVXE",
+              "numericId": "610829",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/52BE2000023PRSBVXE/siteId/73/610829"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:40",
+              "version": "",
+              "performanceId": "62BE2000023PRSBVXE",
+              "numericId": "610845",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/62BE2000023PRSBVXE/siteId/73/610845"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:40",
+              "version": "",
+              "performanceId": "72BE2000023PRSBVXE",
+              "numericId": "610874",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/72BE2000023PRSBVXE/siteId/73/610874"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Pretty Woman",
+      "slug": "pretty-woman",
+      "filmId": "14522",
+      "filmUrl": "https://www.uci-kinowelt.de/film/pretty-woman/14522/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2461/image-thumb__2461__poster/14522.8d3ab30f.jpg",
+      "genre": "Liebesfilm",
+      "fsk": "6",
+      "runtime": "114",
+      "director": "Garry Marshall",
+      "cast": "Richard Gere, Julia Roberts, Ralph Bellamy, Jason Alexander, Laura San Giacomo",
+      "description": "Der Romantikklassiker schlechthin: Das leichte Mädchen Vivian (Julia Roberts) trifft ihren Traumprinzen (Richard Gere) und aus der geschäftlichen Beziehung wird tatsächlich Liebe!",
+      "showtimes": [
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "",
+              "performanceId": "0D8E2000023PRSBVXE",
+              "numericId": "601469",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0D8E2000023PRSBVXE/siteId/73/601469"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-25T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Ready or Not 2",
+      "slug": "ready-or-not-2",
+      "filmId": "412518",
+      "filmUrl": "https://www.uci-kinowelt.de/film/ready-or-not-2/412518/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2359/image-thumb__2359__poster/412518.dd51349e.jpg",
+      "genre": "Horrorkomödie",
+      "fsk": "16",
+      "runtime": "107",
+      "director": "Matt Bettinelli-Olpin, Tyler Gillett",
+      "cast": "Samara Weaving, Kathryn Newton, Sarah Michelle Gellar",
+      "description": "Nur Momente nach dem brutalen Angriff der Familie Le Domas erkennt Grace (Samara Weaving), dass ihr Überleben sie in die nächste Stufe des albtraumhaften Spiels katapultiert hat - diesmal jedoch mit ihrer entfremdeten Schwester Faith (Kathryn Newton) an ihrer Seite. Grace hat nur eine Chance: selbst zu überleben, ihre Schwester zu beschützen und den Hohen Rat zu stürzen, der im Verborgenen die Geschicke der Welt lenkt. Vier rivalisierende Familien jagen sie gnadenlos, um den Thron zu erobern. Und am Ende gilt: wer gewinnt, kontrolliert alles. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:30",
+              "version": "",
+              "performanceId": "DD9E2000023PRSBVXE",
+              "numericId": "589681",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DD9E2000023PRSBVXE/siteId/73/589681"
+            },
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "6C9E2000023PRSBVXE",
+              "numericId": "589684",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6C9E2000023PRSBVXE/siteId/73/589684"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "7C9E2000023PRSBVXE",
+              "numericId": "589695",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/7C9E2000023PRSBVXE/siteId/73/589695"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:15",
+              "version": "",
+              "performanceId": "B2BE2000023PRSBVXE",
+              "numericId": "610791",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/B2BE2000023PRSBVXE/siteId/73/610791"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:15",
+              "version": "",
+              "performanceId": "C2BE2000023PRSBVXE",
+              "numericId": "610812",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C2BE2000023PRSBVXE/siteId/73/610812"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "23:00",
+              "version": "",
+              "performanceId": "A2BE2000023PRSBVXE",
+              "numericId": "610826",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A2BE2000023PRSBVXE/siteId/73/610826"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:15",
+              "version": "",
+              "performanceId": "D2BE2000023PRSBVXE",
+              "numericId": "610867",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D2BE2000023PRSBVXE/siteId/73/610867"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:15",
+              "version": "",
+              "performanceId": "E2BE2000023PRSBVXE",
+              "numericId": "610871",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E2BE2000023PRSBVXE/siteId/73/610871"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:15",
+              "version": "",
+              "performanceId": "F2BE2000023PRSBVXE",
+              "numericId": "610900",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F2BE2000023PRSBVXE/siteId/73/610900"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Scream 7",
+      "slug": "scream-7",
+      "filmId": "405077",
+      "filmUrl": "https://www.uci-kinowelt.de/film/scream-7/405077/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2154/image-thumb__2154__poster/405077.f6dca5a6.jpg",
+      "genre": "Horrorfilm",
+      "fsk": "16",
+      "runtime": "109",
+      "director": "Kevin Williamson",
+      "cast": "Neve Campbell, Courteney Cox, Isabel May",
+      "description": "Als in der ruhigen Stadt, in der Sidney Prescott (Neve Campbell) sich ein neues Leben aufgebaut hat, ein neuer Ghostface-Killer auftaucht, werden ihre schlimmsten Befürchtungen wahr, denn ihre Tochter (Isabel May) ist sein nächstes Ziel. Entschlossen, ihre Familie zu beschützen, muss Sidney sich den Schrecken ihrer Vergangenheit stellen, um dem Blutvergießen ein für alle Mal ein Ende zu setzen. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "23:00",
+              "version": "",
+              "performanceId": "1EAE2000023PRSBVXE",
+              "numericId": "610827",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1EAE2000023PRSBVXE/siteId/73/610827"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-24T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Shelter",
+      "slug": "shelter",
+      "filmId": "415842",
+      "filmUrl": "https://www.uci-kinowelt.de/film/shelter/415842/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2315/image-thumb__2315__poster/415842.3016229f.jpg",
+      "genre": "Action, Psycho-Thriller, Thriller",
+      "fsk": "16",
+      "runtime": "107",
+      "director": "Ric Roman Waugh",
+      "cast": "Jason Statham, Bodhi Rae Breathnach, Bill Nighy",
+      "description": "Michael Mason (Jason Statham), ein untergetauchter Elite-Agent, lebt auf einer abgelegenen Insel in Schottland. Als er in einem schweren Sturm ein Mädchen vor dem Ertrinken rettet, setzt er damit eine Kette von Ereignissen in Gang, die sein Versteck enttarnen und ihn zurück in die Welt zwingen. Dort muss er nicht nur um das Überleben der Teenagerin kämpfen, sondern sich auch den Dämonen seiner Vergangenheit stellen ...",
+      "showtimes": [
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "82BE2000023PRSBVXE",
+              "numericId": "610785",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/82BE2000023PRSBVXE/siteId/73/610785"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:40",
+              "version": "",
+              "performanceId": "2CAE2000023PRSBVXE",
+              "numericId": "610817",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/2CAE2000023PRSBVXE/siteId/73/610817"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:20",
+              "version": "",
+              "performanceId": "6DAE2000023PRSBVXE",
+              "numericId": "610823",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6DAE2000023PRSBVXE/siteId/73/610823"
+            }
+          ]
+        },
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "92BE2000023PRSBVXE",
+              "numericId": "610865",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/92BE2000023PRSBVXE/siteId/73/610865"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-22T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Shining",
+      "slug": "shining",
+      "filmId": "18977",
+      "filmUrl": "https://www.uci-kinowelt.de/film/shining/18977/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2463/image-thumb__2463__poster/18977.80184659.jpg",
+      "genre": "Horrorfilm, Psycho-Thriller",
+      "fsk": "16",
+      "runtime": "119",
+      "director": "Stanley Kubrick",
+      "cast": "Jack Nicholson, Shelley Duvall, Danny Lloyd",
+      "description": "Der Job scheint locker: Während der Winterpause soll Jack Torrance mit seiner Familie das luxuriöse Hotel \"Overlook\" beaufsichtigen. Dass sein Vorgänger sich selbst tötete, stört Torrance wenig - bis auch er den diabolischen Mächten des Hotels verfällt... (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "23:00",
+              "version": "",
+              "performanceId": "1D8E2000023PRSBVXE",
+              "numericId": "601468",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1D8E2000023PRSBVXE/siteId/73/601468"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-24T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "They Will Kill You",
+      "slug": "they-will-kill-you",
+      "filmId": "415307",
+      "filmUrl": "https://www.uci-kinowelt.de/film/they-will-kill-you/415307/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2353/image-thumb__2353__poster/415307.2ef5e216.jpg",
+      "genre": "Horrorfilm, Komödie",
+      "fsk": "16",
+      "runtime": "94",
+      "director": "Kirill Sokolov",
+      "cast": "Zazie Beetz, Patricia Arquette, Heather Graham",
+      "description": "Im Mittelpunkt des Films steht eine junge Frau, die eine Nacht im \"Virgil\" überstehen muss - dem geheimnisvollen Unterschlupf einer dämonischen Sekte, in dem auf Schritt und Tritt todbringende Gefahren lauern. Um nicht zum nächsten Opfer zu werden, muss sich die Protagonistin in einer ebenso kompromisslosen wie bildgewaltigen Schlacht voller spektakulärer Kills und rabenschwarzem Humor behaupten. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "23:20",
+              "version": "",
+              "performanceId": "91BE2000023PRSBVXE",
+              "numericId": "610830",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/91BE2000023PRSBVXE/siteId/73/610830"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-24T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Tom und Jerry: Der verlorene Kompass",
+      "slug": "tom-und-jerry-der-verlorene-kompass",
+      "filmId": "416602",
+      "filmUrl": "https://www.uci-kinowelt.de/film/tom-und-jerry-der-verlorene-kompass/416602/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2420/image-thumb__2420__poster/416602.f1825700.jpg",
+      "genre": "Abenteuer, Animation",
+      "fsk": "?",
+      "runtime": "",
+      "director": "Gang Zhang",
+      "cast": "",
+      "description": "Hauskatze Tom will sich als Trainee-Security-Katze im Museum beweisen, als sich ausgerechnet Maus Jerry in die neue Ausstellung rund um den mythischen Astral-Kompass schleichen will. Durch die unweigerlich folgende Jagd öffnen die beiden versehentlich ein Portal, das Tom und Jerry ins China einer längst vergangenen Ära transportiert. Dort wird Tom für einen vom Himmel gesandten Helden gehalten und von den Bewohnern der goldenen Stadt verehrt. Doch gleich zwei Gruppierungen sind hinter dem magischen Kompass her, den Tom um den Hals trägt. Der Phönix-Meister und seine Helfer, darunter die hübsche Katzendame Jade, brauchen den Kompass, damit der Phönix-Meister aus seinem Exil in den Himmel zurückkehren kann. Die verwunschene Mega-Ratte und ihr Ratten-Clan, die Jerry auf ihre Seite ziehen wollen, haben dagegen viel finsterere Pläne. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:30",
+              "version": "",
+              "performanceId": "3A9E2000023PRSBVXE",
+              "numericId": "574692",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3A9E2000023PRSBVXE/siteId/73/574692"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-25T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Vier Fäuste für ein Hallelujah",
+      "slug": "vier-faeuste-fuer-ein-hallelujah",
+      "filmId": "187287",
+      "filmUrl": "https://www.uci-kinowelt.de/film/vier-faeuste-fuer-ein-hallelujah/187287/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2467/image-thumb__2467__poster/187287.31485a64.jpg",
+      "genre": "Western",
+      "fsk": "12",
+      "runtime": "127",
+      "director": "E. B. Clucher",
+      "cast": "Terence Hill, Bud Spencer, Yanti Sommer, Harry Carey Jr., Jessica Dublin",
+      "description": "Die ungleichen Brüder Bambi (Bud Spencer) und Trinity (Terence Hill) müssen ihrem Vater versprechen, gute Banditen zu werden, um die Familientradition zu bewahren. Dieses Versprechen in die Tat umzusetzen, ist gar nicht so einfach, da beide ein gutes Herz haben. Als angebliche Regierungsbeamte kommen sie dem Ganoven Parker in die Quere, mischen sich schlagkräftig in seine Geschäfte ein und verhelfen unfreiwillig der Gerechtigkeit zum Sieg. (Text: Verleih)",
+      "showtimes": [
+        {
+          "date": "So., 26.04.",
+          "dateObj": "2026-04-25T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "",
+              "performanceId": "FC8E2000023PRSBVXE",
+              "numericId": "566758",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FC8E2000023PRSBVXE/siteId/73/566758"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-25T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Woodwalkers 2",
+      "slug": "woodwalkers-2",
+      "filmId": "400161",
+      "filmUrl": "https://www.uci-kinowelt.de/film/woodwalkers-2/400161/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2036/image-thumb__2036__poster/400161.86621670.jpg",
+      "genre": "Abenteuer, Fantasy",
+      "fsk": "6",
+      "runtime": "102",
+      "director": "Sven Unterwaldt",
+      "cast": "Emile Cherif, Oliver Masucci, Martina Gedeck, Lilli Falk, Johan von Ehrlich, Hannah Herzsprung",
+      "description": "Für Carag, Brandon, Holly und Lou beginnt ein neues Schuljahr an der Clearwater High. Und das hat es in sich, denn das Naturschutzgebiet rund um die Schule ist in Gefahr. Carags früherer Mentor Andrew Milling plant, den Wald rund um das Internat zu verkaufen - das Revier der Gestaltwandler! Puma-Wandler Carag und seine Freunde versuchen dies mit allen Mitteln zu verhindern, doch Milling hat einen Spion an der Schule und ist ihnen immer einen Schritt voraus. Ausgerechnet die Schneewölfin Tikaani kommt ihnen schließlich zur Hilfe. Doch kann Carag ihr wirklich trauen - und ist da vielleicht sogar mehr als Freundschaft zwischen den beiden? (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 21.04.",
+          "dateObj": "2026-04-20T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "8F9E2000023PRSBVXE",
+              "numericId": "589688",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/8F9E2000023PRSBVXE/siteId/73/589688"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 22.04.",
+          "dateObj": "2026-04-21T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:10",
+              "version": "",
+              "performanceId": "9F9E2000023PRSBVXE",
+              "numericId": "589704",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/9F9E2000023PRSBVXE/siteId/73/589704"
+            }
+          ]
+        },
+        {
+          "date": "Do., 23.04.",
+          "dateObj": "2026-04-22T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "CEAE2000023PRSBVXE",
+              "numericId": "610478",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/CEAE2000023PRSBVXE/siteId/73/610478"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 24.04.",
+          "dateObj": "2026-04-23T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "DEAE2000023PRSBVXE",
+              "numericId": "610809",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/DEAE2000023PRSBVXE/siteId/73/610809"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 25.04.",
+          "dateObj": "2026-04-24T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "EEAE2000023PRSBVXE",
+              "numericId": "610833",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/EEAE2000023PRSBVXE/siteId/73/610833"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "FEAE2000023PRSBVXE",
+              "numericId": "610872",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FEAE2000023PRSBVXE/siteId/73/610872"
+            }
+          ]
+        },
+        {
+          "date": "Di., 28.04.",
+          "dateObj": "2026-04-27T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "0FAE2000023PRSBVXE",
+              "numericId": "610893",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0FAE2000023PRSBVXE/siteId/73/610893"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:00",
+              "version": "",
+              "performanceId": "1FAE2000023PRSBVXE",
+              "numericId": "610904",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/1FAE2000023PRSBVXE/siteId/73/610904"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-20T22:00:00.000Z",
+      "isUpcoming": false
+    },
+    {
+      "title": "Überraschungspremiere",
+      "slug": "ueberraschungspremiere",
+      "filmId": "78373",
+      "filmUrl": "https://www.uci-kinowelt.de/film/ueberraschungspremiere/78373/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2307/image-thumb__2307__poster/78373.6696ec57.jpg",
+      "genre": "",
+      "fsk": "?",
+      "runtime": "",
+      "director": "",
+      "cast": "",
+      "description": "Die Sneak Preview im UCI - Denn sie wissen nicht, was sie sehen!",
+      "showtimes": [
+        {
+          "date": "Mo., 27.04.",
+          "dateObj": "2026-04-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:10",
+              "version": "",
+              "performanceId": "5BAE2000023PRSBVXE",
+              "numericId": "610870",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5BAE2000023PRSBVXE/siteId/73/610870"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-26T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Der Teufel trägt Prada 2",
+      "slug": "der-teufel-traegt-prada-2",
+      "filmId": "411832",
+      "filmUrl": "https://www.uci-kinowelt.de/film/der-teufel-traegt-prada-2/411832/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2277/image-thumb__2277__poster/411832.f4e025c2.jpg",
+      "genre": "Komödie, Drama",
+      "fsk": "0",
+      "runtime": "118",
+      "director": "David Frankel",
+      "cast": "Meryl Streep, Anne Hathaway, Stanley Tucci",
+      "description": "Fast zwanzig Jahre nach ihren legendären Auftritten als Miranda, Andy, Emily und Nigel kehren Meryl Streep, Anne Hathaway, Emily Blunt und Stanley Tucci zu den Fashion-Hotspots von New York City und in die eleganten Büros des Runway Magazins zurück - in der mit Spannung erwarteten Fortsetzung des Film-Phänomens von 2006, das eine ganze Generation geprägt hat. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Mi., 29.04.",
+          "dateObj": "2026-04-28T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "iSense",
+              "performanceId": "F56E2000023PRSBVXE",
+              "numericId": "510314",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F56E2000023PRSBVXE/siteId/73/510314"
+            },
+            {
+              "time": "20:15",
+              "version": "OV",
+              "performanceId": "47AE2000023PRSBVXE",
+              "numericId": "599478",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/47AE2000023PRSBVXE/siteId/73/599478"
+            },
+            {
+              "time": "20:30",
+              "version": "",
+              "performanceId": "3F7E2000023PRSBVXE",
+              "numericId": "550802",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/3F7E2000023PRSBVXE/siteId/73/550802"
+            }
+          ]
+        },
+        {
+          "date": "Do., 30.04.",
+          "dateObj": "2026-04-29T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "827E2000023PRSBVXE",
+              "numericId": "532708",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/827E2000023PRSBVXE/siteId/73/532708"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "E27E2000023PRSBVXE",
+              "numericId": "532709",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/E27E2000023PRSBVXE/siteId/73/532709"
+            }
+          ]
+        },
+        {
+          "date": "Fr., 01.05.",
+          "dateObj": "2026-04-30T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "927E2000023PRSBVXE",
+              "numericId": "532710",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/927E2000023PRSBVXE/siteId/73/532710"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "F27E2000023PRSBVXE",
+              "numericId": "532711",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/F27E2000023PRSBVXE/siteId/73/532711"
+            }
+          ]
+        },
+        {
+          "date": "Sa., 02.05.",
+          "dateObj": "2026-05-01T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "A27E2000023PRSBVXE",
+              "numericId": "532712",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A27E2000023PRSBVXE/siteId/73/532712"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "037E2000023PRSBVXE",
+              "numericId": "532713",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/037E2000023PRSBVXE/siteId/73/532713"
+            }
+          ]
+        },
+        {
+          "date": "So., 03.05.",
+          "dateObj": "2026-05-02T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "B27E2000023PRSBVXE",
+              "numericId": "532714",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/B27E2000023PRSBVXE/siteId/73/532714"
+            },
+            {
+              "time": "20:00",
+              "version": "OV",
+              "performanceId": "437E2000023PRSBVXE",
+              "numericId": "532715",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/437E2000023PRSBVXE/siteId/73/532715"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "137E2000023PRSBVXE",
+              "numericId": "532716",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/137E2000023PRSBVXE/siteId/73/532716"
+            }
+          ]
+        },
+        {
+          "date": "Mo., 04.05.",
+          "dateObj": "2026-05-03T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "C27E2000023PRSBVXE",
+              "numericId": "532717",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/C27E2000023PRSBVXE/siteId/73/532717"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "237E2000023PRSBVXE",
+              "numericId": "533142",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/237E2000023PRSBVXE/siteId/73/533142"
+            }
+          ]
+        },
+        {
+          "date": "Mi., 06.05.",
+          "dateObj": "2026-05-05T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:10",
+              "version": "iSense",
+              "performanceId": "D27E2000023PRSBVXE",
+              "numericId": "532719",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/D27E2000023PRSBVXE/siteId/73/532719"
+            },
+            {
+              "time": "20:15",
+              "version": "iSense",
+              "performanceId": "337E2000023PRSBVXE",
+              "numericId": "532720",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/337E2000023PRSBVXE/siteId/73/532720"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-04-28T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Die drei Tage des Condor",
+      "slug": "die-drei-tage-des-condor",
+      "filmId": "288401",
+      "filmUrl": "https://www.uci-kinowelt.de/film/die-drei-tage-des-condor/288401/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/1951/image-thumb__1951__poster/288401.647b2b6f.jpg",
+      "genre": "Psycho-Thriller, Thriller",
+      "fsk": "16",
+      "runtime": "117",
+      "director": "Sydney Pollack",
+      "cast": "Robert Redford, Faye Dunaway, Max von Sydow",
+      "description": "Joseph Turner (Robert Redford), Codename Condor, arbeitet als Analytiker in einer New Yorker Außenstelle der CIA. Eines Tages kommt er von der Mittagspause zurück und findet das Büro verwüstet und sämtliche Kollegen ermordet vor. Als er den Vorfall seinen Vorgesetzten meldet und daraufhin nur knapp einer Falle entgeht, wird ihm bewusst, dass die Verantwortlichen aus den eigenen Reihen kommen. Er taucht bei der Fotografin Kathy (Faye Dunaway) unter und begibt sich mit ihrer Hilfe auf die gefährliche Suche nach den Drahtziehern und ihrem Motiv. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 05.05.",
+          "dateObj": "2026-05-04T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "",
+              "performanceId": "FCFD2000023PRSBVXE",
+              "numericId": "359376",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/FCFD2000023PRSBVXE/siteId/73/359376"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-05-04T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Die Heinzels - Rückkehr der Heinzelmännchen",
+      "slug": "die-heinzels-rueckkehr-der-heinzelmaennchen",
+      "filmId": "348342",
+      "filmUrl": "https://www.uci-kinowelt.de/film/die-heinzels-rueckkehr-der-heinzelmaennchen/348342/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2135/image-thumb__2135__poster/348342.f93887e9.jpg",
+      "genre": "Animation, Komödie, Kinder-/Jugendfilm",
+      "fsk": "0",
+      "runtime": "74",
+      "director": "Ute von Münchow-Pohl",
+      "cast": "",
+      "description": "Obwohl die Heinzelmännchen nun schon seit mehr als 250 Jahren unter der Erde leben und sich längst an ihre dunkle Heimat gewöhnt haben müssten, kann das aufgeweckte Heinzelmädchen Helvi die Enge dort plötzlich nicht mehr aushalten und will unbedingt an die Erdoberfläche. Dort hofft sie, es besser zu treffen und ihre wahre Berufung zu entdecken. Leider ist ihr erster Kontakt zu den Menschen ausgerechnet der Bäcker Theo, der sich nicht gerade als der freundlichste Zeitgenosse erweist. (vf)",
+      "showtimes": [
+        {
+          "date": "Sa., 02.05.",
+          "dateObj": "2026-05-01T22:00:00.000Z",
+          "times": [
+            {
+              "time": "15:00",
+              "version": "",
+              "performanceId": "281E2000023PRSBVXE",
+              "numericId": "399180",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/281E2000023PRSBVXE/siteId/73/399180"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-05-01T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Die Legende des Wüstenkindes",
+      "slug": "die-legende-des-wuestenkindes",
+      "filmId": "416073",
+      "filmUrl": "https://www.uci-kinowelt.de/film/die-legende-des-wuestenkindes/416073/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2434/image-thumb__2434__poster/416073.c14913af.jpg",
+      "genre": "Drama, Abenteuer",
+      "fsk": "6",
+      "runtime": "92",
+      "director": "Gilles de Maistre",
+      "cast": "Neige de Maistre, Adrianna Gradziel, Kev Adams",
+      "description": "Die 14-jährige Sun hat erfolgreich ein Buch veröffentlicht - inspiriert von einer Geschichte, die ihr verstorbener Großvater ihr einst erzählte: die beinahe unglaubliche Legende des Jungen Hadara, der während eines verheerenden Sandsturms von seiner Karawane getrennt wurde und von einer Gruppe Strauße gerettet wird. In der unwirtlichen Weite der Sahara wächst er fortan fernab seiner Familie auf, begleitet nur von seinem treusten Gefährten, einem jungen Wüstenfuchs. Als Sun im Rahmen einer Preisverleihung für ihr Buch selbst zu einer Reise in die Sahara eingeladen wird, begegnet sie dort dem gleichaltrigen Nomadenmädchen Kharouba - und erkennt bald, dass die Legende des Wüstenkindes Hadara weit mehr ist als eine einfache Gute-Nacht-Geschichte... (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "So., 17.05.",
+          "dateObj": "2026-05-16T22:00:00.000Z",
+          "times": [
+            {
+              "time": "14:30",
+              "version": "",
+              "performanceId": "6A9E2000023PRSBVXE",
+              "numericId": "574694",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/6A9E2000023PRSBVXE/siteId/73/574694"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-05-16T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Iron Maiden: Burning Ambition",
+      "slug": "iron-maiden-burning-ambition",
+      "filmId": "417994",
+      "filmUrl": "https://www.uci-kinowelt.de/film/iron-maiden-burning-ambition/417994/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2346/image-thumb__2346__poster/417994.92293f47.jpg",
+      "genre": "Dokumentarfilm, Musik",
+      "fsk": "?",
+      "runtime": "",
+      "director": "Malcolm Venville",
+      "cast": "",
+      "description": "Eine Geschichte wie keine andere - ein Sound, der die Welt verändert hat.\n\nMehr als fünfzig Jahre ist es her, dass Bassist Steve Harris seinen einzigartigen musikalischen Traum zur Realität gemacht und eine der epochalsten Bands aller Zeiten ins Leben gerufen hat. Inzwischen sind Iron Maiden ein weltweites Phänomen, mit mehr als 100 Millionen verkauften Tonträgern und einer treuen Fangemeinde rund um den ganzen Globus.\n\nIRON MAIDEN: BURNING AMBITION erzählt einen der legendärsten Werdegänge in der Geschichte der Musik. Mit erstmaligem Zugang zum offiziellen Archiv der Band und intimsten Erinnerungen der aktuellen und ehemaligen Mitglieder zeichnet die Doku fünf Jahrzehnte nach: von den bescheidenen Pubs East Londons bis zu den größten Stadien der Welt.\n\nExklusive Interviews mit der Band und weiteren Mitwirkenden wie Hollywoodstar Javier Bardem (F1), Schlagzeuglegende Lars Ulrich (Metallica) oder Rap-Ikone Chuck D (Public Enemy) sowie brandneue Animationssequenzen mit dem berühmten Maskottchen Eddie schaffen einen außerordentlich persönlichen Blick auf die unerschütterliche Vision einer Heavy-Metal-Institution und ihre leidenschaftliche Beziehung zu ihren Fans. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Do., 14.05.",
+          "dateObj": "2026-05-13T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "OmU",
+              "performanceId": "937E2000023PRSBVXE",
+              "numericId": "533995",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/937E2000023PRSBVXE/siteId/73/533995"
+            }
+          ]
+        },
+        {
+          "date": "So., 17.05.",
+          "dateObj": "2026-05-16T22:00:00.000Z",
+          "times": [
+            {
+              "time": "17:00",
+              "version": "OmU",
+              "performanceId": "A37E2000023PRSBVXE",
+              "numericId": "533996",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/A37E2000023PRSBVXE/siteId/73/533996"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-05-13T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Mel Brooks' Spaceballs",
+      "slug": "mel-brooks-spaceballs",
+      "filmId": "12144",
+      "filmUrl": "https://www.uci-kinowelt.de/film/mel-brooks-spaceballs/12144/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/1947/image-thumb__1947__poster/12144.3a39ef22.jpg",
+      "genre": "Science-Fiction, Abenteuer, Komödie",
+      "fsk": "12",
+      "runtime": "96",
+      "director": "Mel Brooks",
+      "cast": "Mel Brooks, Bill Pullman, Daphne Zniga, Dick van Patten, Rick Moranis",
+      "description": "Die Herrscher des Planeten Spaceball haben die wertvolle Atmosphäre um ihren Stern auf idiotische Weise vergeudet. Nun schmieden sie einen Geheimplan, um die Atemluft von ihren friedlichen Nachbarn des Planeten Druidia abzusaugen. Der listige Präsident Skroob erteilt dem Flaggschiff seiner Raumflotte unter dem Kommando von Lord Helmchen den Befehl, die verwöhnte Prinzessin Vespa von Druidia zu entführen. Allerdings hat er weder mit Weltraum-Draufgänger Lone Starr gerechnet, noch mit dessen Co-Pilot Waldi, dem Möter, ebenso wenig wie mit der Ehren-Druidin Dotti oder gar der geheimen Macht des \"Safts\" ... (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Di., 02.06.",
+          "dateObj": "2026-06-01T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "",
+              "performanceId": "0DFD2000023PRSBVXE",
+              "numericId": "359392",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/0DFD2000023PRSBVXE/siteId/73/359392"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-06-01T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Solo Mio",
+      "slug": "solo-mio",
+      "filmId": "416722",
+      "filmUrl": "https://www.uci-kinowelt.de/film/solo-mio/416722/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2473/image-thumb__2473__poster/416722.ca400afe.jpg",
+      "genre": "Komödie",
+      "fsk": "?",
+      "runtime": "",
+      "director": "Charles Kinnane, Daniel Kinnane",
+      "cast": "Kevin James, Jonathan Roumie, Kim Coates",
+      "description": "Jahrelang hat Matt (Kevin James) gespart, um seiner Verlobten (Julie Ann Emery) eine Traumhochzeit in Italien und unvergessliche Flitterwochen zu ermöglichen. Doch dann lässt seine Zukünftige ihn plötzlich allein vor dem Altar zurück. Mit gebrochenem Herzen bleibt Matt nichts anderes übrig, als die teuer gebuchte Reise allein anzutreten. Dabei trifft er auf die quirlige Italienerin Gia (Nicole Grimaudo), deren Frohmut ihm neue Perspektiven eröffnet. Gemeinsam entdecken sie, wie das Leben und die Liebe unerwartete Wendungen nehmen können - und dass Glück oft dann entsteht, wenn man es nicht sucht. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Mi., 27.05.",
+          "dateObj": "2026-05-26T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "",
+              "performanceId": "5A9E2000023PRSBVXE",
+              "numericId": "574695",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/5A9E2000023PRSBVXE/siteId/73/574695"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-05-26T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Tommy Tom - Der verschwundene Teddybär",
+      "slug": "tommy-tom-der-verschwundene-teddybaer",
+      "filmId": "411847",
+      "filmUrl": "https://www.uci-kinowelt.de/film/tommy-tom-der-verschwundene-teddybaer/411847/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2517/image-thumb__2517__poster/411847.e8290c0b.jpg",
+      "genre": "Trickfilm",
+      "fsk": "?",
+      "runtime": "",
+      "director": "Joost Van Den Bosch, Erik Verkerk",
+      "cast": "",
+      "description": "",
+      "showtimes": [
+        {
+          "date": "Sa., 06.06.",
+          "dateObj": "2026-06-05T22:00:00.000Z",
+          "times": [
+            {
+              "time": "15:00",
+              "version": "",
+              "performanceId": "481E2000023PRSBVXE",
+              "numericId": "399181",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/481E2000023PRSBVXE/siteId/73/399181"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-06-05T22:00:00.000Z",
+      "isUpcoming": true
+    },
+    {
+      "title": "Whistle",
+      "slug": "whistle",
+      "filmId": "405116",
+      "filmUrl": "https://www.uci-kinowelt.de/film/whistle/405116/bad-oeynhausen/73",
+      "poster": "https://www.uci-kinowelt.de/Poster/2375/image-thumb__2375__poster/405116.15b39838.jpg",
+      "genre": "Horrorfilm",
+      "fsk": "16",
+      "runtime": "100",
+      "director": "Corin Hardy",
+      "cast": "Dafne Keen, Sophie Nélisse, Sky Yang",
+      "description": "Eine Highschool-Clique um fünf Außenseiter findet eine mysteriöse aztekische Todes-Pfeife - nicht ahnend, dass ein grauenhafter Fluch auf ihr liegt. Wer auf der Pfeife spielt und einmal ihren furchterregend-schrillen Klang gehört hat, ruft den eigenen Tod auf den Plan und wird fortan von ihm gejagt. Ein Wettlauf gegen die Zeit beginnt: Die Teenager versuchen verzweifelt, dem Geheimnis der Pfeife auf die Spur zu kommen und ihrem eigenen Tod zu entkommen. (Quelle: Verleih)",
+      "showtimes": [
+        {
+          "date": "Mi., 06.05.",
+          "dateObj": "2026-05-05T22:00:00.000Z",
+          "times": [
+            {
+              "time": "20:00",
+              "version": "",
+              "performanceId": "4A9E2000023PRSBVXE",
+              "numericId": "574693",
+              "href": "https://www.uci-kinowelt.de/kino-buchung/performanceId/4A9E2000023PRSBVXE/siteId/73/574693"
+            }
+          ]
+        }
+      ],
+      "firstDate": "2026-05-05T22:00:00.000Z",
+      "isUpcoming": true
+    }
+  ],
+  "fetchedAt": "2026-04-21T10:07:27.566Z",
+  "count": 44
+}
