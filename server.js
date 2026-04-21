@@ -18,8 +18,6 @@ let cache = { data: null, timestamp: 0 };
 const CACHE_TTL = 10 * 60 * 1000;
 let fetchInFlight = null;
 
-let fetchInFlight = null;
-
 async function fetchMovies() {
   const now = Date.now();
   if (cache.data && now - cache.timestamp < CACHE_TTL) return cache.data;
