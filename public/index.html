@@ -167,7 +167,7 @@
     .filter-tab.active { background: var(--gold); color: #000; border-color: var(--gold); font-weight: 600; }
     .filter-tab.fav-tab.active { background: #e8c84a; }
 
-    /* FAVORITEN BUTTON */
+    /* WATCHLIST BUTTON */
     .fav-btn {
       position: absolute;
       top: 8px; right: 8px;
@@ -186,11 +186,53 @@
     .fav-btn:hover { transform: scale(1.15); }
     .fav-btn.active { background: rgba(226,165,58,0.85); }
 
-    /* Favoriten-Karte: goldener linker Rand */
+    /* Watchlist-Karte: goldener linker Rand */
     .movie-card.is-fav { border-color: var(--gold-dim); }
     .movie-card.is-fav .card-title::before {
       content: '⭐ ';
       font-size: 0.8em;
+    }
+
+    /* ── Schon gesehen ── */
+    .seen-btn {
+      position: absolute;
+      bottom: 8px; right: 8px;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.6);
+      border: none;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px;
+      backdrop-filter: blur(4px);
+      transition: transform 0.2s, background 0.2s;
+      z-index: 5;
+      line-height: 1;
+      color: var(--text-dim);
+    }
+    .seen-btn:hover { transform: scale(1.15); }
+    .seen-btn.active { background: rgba(74,222,128,0.85); color: #000; }
+
+    /* Gesehen-Overlay auf dem Poster */
+    .seen-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem;
+      opacity: 0;
+      transition: opacity 0.2s;
+      pointer-events: none;
+    }
+    .movie-card.is-seen .seen-overlay { opacity: 1; }
+    .movie-card.is-seen .poster-wrapper img { filter: brightness(0.55) saturate(0.4); }
+
+    /* Gesehen-Karte: grüner linker Rand */
+    .movie-card.is-seen { border-color: rgba(74,222,128,0.35); }
+    .movie-card.is-seen .card-title::after {
+      content: ' ✓';
+      color: #4ade80;
+      font-size: 0.85em;
     }
 
     /* MAIN */
@@ -326,8 +368,10 @@
       backdrop-filter: blur(4px);
     }
 
-    .version-badge.imax { border-color: var(--blue); color: var(--blue); }
+    .version-badge.imax   { border-color: var(--blue); color: var(--blue); }
     .version-badge.threeD { border-color: var(--gold); color: var(--gold); }
+    .version-badge.surcharge { border-color: #f97316; color: #f97316; }
+    .version-badge.included  { border-color: #4ade80; color: #4ade80; }
 
     .card-body {
       padding: 16px;
@@ -570,6 +614,246 @@
       color: var(--text-dim);
     }
 
+    /* --- Ratings --- */
+    .ratings-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 11px;
+      border-radius: 8px;
+      font-size: 0.83rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.15s;
+      cursor: pointer;
+    }
+    .rating-badge:hover { opacity: 0.85; transform: scale(1.04); }
+    .rating-badge.imdb  { background: #f5c518; color: #000; }
+    .rating-badge.rt-fresh    { background: #fa320a; color: #fff; }
+    .rating-badge.rt-rotten   { background: #5c5c5c; color: #fff; }
+    .rating-badge.rt-none     { background: #3a3a3a; color: #aaa; }
+    .rating-badge.loading-ratings { background: var(--surface); color: var(--text-dim); pointer-events: none; }
+    .rating-badge img { width: 15px; height: 15px; object-fit: contain; }
+
+    /* --- Abstimmung --- */
+    .poll-btn {
+      background: none;
+      border: 1.5px solid var(--border);
+      color: var(--text-dim);
+      border-radius: 8px;
+      padding: 7px 14px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .poll-btn:hover { border-color: var(--gold); color: var(--gold); }
+    .poll-btn.active { background: var(--gold); border-color: var(--gold); color: #000; font-weight: 700; }
+
+    /* Auswahlmodus: Karte selektierbar */
+    body.poll-mode .movie-card { cursor: pointer; }
+    body.poll-mode .movie-card:hover { border-color: var(--gold-dim); }
+    .movie-card.poll-selected { border-color: var(--gold) !important; box-shadow: 0 0 0 2px var(--gold); }
+    .movie-card.poll-selected .poster-wrapper::after {
+      content: '✓';
+      position: absolute;
+      inset: 0;
+      background: rgba(226,165,58,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #fff;
+      pointer-events: none;
+    }
+
+    /* Sticky Bottom Bar im Auswahlmodus */
+    .poll-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 200;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    .poll-bar.visible { transform: translateY(0); }
+    .poll-bar-info { font-size: 0.9rem; color: var(--text-dim); }
+    .poll-bar-info strong { color: var(--text); }
+    .poll-bar-actions { display: flex; gap: 10px; }
+    .poll-bar-cancel { background: none; border: 1px solid var(--border); color: var(--text-dim); border-radius: 8px; padding: 8px 16px; cursor: pointer; font-size: 0.85rem; }
+    .poll-bar-create { background: var(--gold); border: none; color: #000; border-radius: 8px; padding: 8px 18px; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: background 0.2s; }
+    .poll-bar-create:disabled { background: var(--border); color: var(--text-dim); cursor: not-allowed; }
+    .poll-bar-create:not(:disabled):hover { background: #f0c84a; }
+
+    /* Abstimmungs-Ansicht (Share-Link geöffnet) */
+    .vote-header {
+      text-align: center;
+      padding: 32px 24px 16px;
+    }
+    .vote-header h1 { font-size: 1.4rem; font-weight: 800; margin-bottom: 6px; }
+    .vote-header p { font-size: 0.9rem; color: var(--text-dim); }
+
+    .vote-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+      padding: 16px 24px 32px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .vote-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.15s;
+      display: flex;
+      flex-direction: column;
+    }
+    .vote-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+    .vote-card.voted-for { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
+
+    .vote-card img { width: 100%; aspect-ratio: 2/3; object-fit: cover; }
+    .vote-card-body { padding: 10px 12px 12px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+    .vote-card-title { font-size: 0.88rem; font-weight: 700; line-height: 1.3; }
+    .vote-card-meta { font-size: 0.75rem; color: var(--text-dim); }
+    .vote-card-btn {
+      margin-top: auto;
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: none;
+      background: var(--border);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .vote-card-btn:hover { background: var(--gold-dim); }
+    .vote-card.voted-for .vote-card-btn { background: var(--gold); color: #000; }
+
+    /* Ergebnis-Bars */
+    .result-bar-wrap { margin-top: 6px; }
+    .result-bar-label { font-size: 0.72rem; color: var(--text-dim); display: flex; justify-content: space-between; margin-bottom: 3px; }
+    .result-bar-track { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+    .result-bar-fill { height: 100%; background: var(--gold); border-radius: 3px; transition: width 0.6s ease; }
+
+    /* Geteilter Link Modal */
+    .share-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 16px;
+    }
+    .share-url {
+      flex: 1;
+      font-size: 0.85rem;
+      color: var(--gold);
+      word-break: break-all;
+      font-family: monospace;
+    }
+    .copy-btn {
+      background: var(--gold);
+      border: none;
+      border-radius: 7px;
+      padding: 6px 14px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: #000;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .copy-btn:hover { background: #f0c84a; }
+    .whatsapp-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      padding: 10px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .whatsapp-btn:hover { background: #1ebe5b; }
+
+    /* --- Trailer --- */
+    .trailer-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 14px;
+      padding: 8px 18px;
+      background: #cc0000;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      letter-spacing: 0.02em;
+    }
+    .trailer-btn:hover { background: #e00; transform: scale(1.03); }
+    .trailer-btn:active { transform: scale(0.97); }
+    .trailer-btn svg { width: 16px; height: 16px; fill: #fff; flex-shrink: 0; }
+    .trailer-btn.loading { opacity: 0.7; pointer-events: none; }
+
+    .trailer-embed {
+      margin: 0 24px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #000;
+      position: relative;
+      aspect-ratio: 16/9;
+      display: none;
+    }
+    .trailer-embed.visible { display: block; }
+    .trailer-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .trailer-embed-close {
+      position: absolute;
+      top: 8px; right: 8px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 28px; height: 28px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 10;
+      transition: background 0.2s;
+    }
+    .trailer-embed-close:hover { background: rgba(200,0,0,0.8); }
+
     .modal-showtimes {
       padding: 24px;
     }
@@ -624,6 +908,16 @@
       font-size: 0.65rem;
       opacity: 0.7;
     }
+
+    .aufpreis-tag {
+      font-size: 0.62rem;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .aufpreis-tag.extra  { background: rgba(249,115,22,0.18); color: #f97316; border: 1px solid rgba(249,115,22,0.4); }
+    .aufpreis-tag.free   { background: rgba(74,222,128,0.12); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
 
     .modal-close {
       position: absolute;
@@ -744,6 +1038,11 @@
         width: 28px; height: 28px;
         font-size: 14px;
       }
+      .seen-btn {
+        bottom: 6px; right: 6px;
+        width: 28px; height: 28px;
+        font-size: 13px;
+      }
       .version-badges { bottom: 6px; left: 6px; gap: 2px; }
       .version-badge { font-size: 0.58rem; padding: 1px 4px; }
 
@@ -853,6 +1152,10 @@
 
       /* Footer kleiner */
       footer { padding: 16px; font-size: 0.72rem; }
+
+      /* Trailer auf Mobil */
+      .trailer-btn { font-size: 0.82rem; padding: 7px 14px; margin-top: 10px; }
+      .trailer-embed { margin: 0 16px 0; border-radius: 8px; }
     }
   </style>
 </head>
@@ -866,6 +1169,7 @@
     </div>
     <div class="header-actions">
       <span class="fetch-time" id="fetchTime"></span>
+      <button class="poll-btn" id="pollBtn" onclick="togglePollMode()">🗳️ Abstimmung</button>
       <button class="btn-refresh" id="refreshBtn" onclick="loadMovies(true)">
         <span id="refreshIcon">↻</span> Aktualisieren
       </button>
@@ -880,7 +1184,8 @@
       <button class="filter-tab active" data-filter="all" onclick="setFilter('all')">Alle</button>
       <button class="filter-tab" data-filter="current" onclick="setFilter('current')">Jetzt im Kino</button>
       <button class="filter-tab" data-filter="upcoming" onclick="setFilter('upcoming')">Demnächst</button>
-      <button class="filter-tab fav-tab" data-filter="favs" onclick="setFilter('favs')">⭐ Favoriten</button>
+      <button class="filter-tab fav-tab" data-filter="favs" onclick="setFilter('favs')">🎬 Watchlist</button>
+      <button class="filter-tab" data-filter="seen" onclick="setFilter('seen')">✓ Gesehen</button>
     </div>
   </div>
 </div>
@@ -891,6 +1196,18 @@
     <p>Lade Kinoprogramm…</p>
   </div>
 </main>
+
+<!-- Abstimmung: Sticky Bottom Bar -->
+<div class="poll-bar" id="pollBar">
+  <div class="poll-bar-info">
+    <strong id="pollCount">0</strong> <span id="pollCountLabel">Filme ausgewählt</span>
+    <span style="font-size:0.8rem;margin-left:8px;">(min. 2, max. 5)</span>
+  </div>
+  <div class="poll-bar-actions">
+    <button class="poll-bar-cancel" onclick="togglePollMode()">Abbrechen</button>
+    <button class="poll-bar-create" id="pollCreateBtn" disabled onclick="createPoll()">Link erstellen</button>
+  </div>
+</div>
 
 <div id="modalBackdrop" class="modal-backdrop" onclick="closeModal(event)">
   <div class="modal" id="modal">
@@ -907,15 +1224,64 @@
 <script>
   let allMovies = [];
   let activeFilter = 'all';
+
+  // ── Schon gesehen (localStorage) ─────────────────────
+  function getSeen() {
+    try { return new Set(JSON.parse(localStorage.getItem('uci-seen') || '[]')); }
+    catch { return new Set(); }
+  }
+  function saveSeen(set) {
+    localStorage.setItem('uci-seen', JSON.stringify([...set]));
+  }
+  function toggleSeen(filmId, btn) {
+    const seen = getSeen();
+    const card = btn.closest('.movie-card');
+    if (seen.has(filmId)) {
+      seen.delete(filmId);
+      btn.classList.remove('active');
+      btn.textContent = '○';
+      card.classList.remove('is-seen');
+    } else {
+      seen.add(filmId);
+      btn.classList.add('active');
+      btn.textContent = '✓';
+      card.classList.add('is-seen');
+    }
+    saveSeen(seen);
+  }
+
+  // ── UCI Abo Aufpreise ─────────────────────────────────
+  // Quelle: UCI Kinoabo-Bedingungen (Stand 2025)
+  // UCI Unlimited Premium Card:
+  // IMAX: +3,00 € Aufpreis — alles andere inklusive
+  const ABO_SURCHARGES = {
+    'IMAX':   { label: '+3,00 €', cls: 'extra' },
+    'ISENSE': { label: 'Abo ✓',  cls: 'free'  },
+    '3D':     { label: 'Abo ✓',  cls: 'free'  },
+    'OV':     { label: 'Abo ✓',  cls: 'free'  },
+    'OMU':    { label: 'Abo ✓',  cls: 'free'  },
+  };
+
+  // Gibt { label, cls } für eine version-Zeichenkette zurück
+  // version kann mehrere Teile haben, z.B. "IMAX 3D" → nimm den teuersten
+  function getAufpreis(version) {
+    if (!version) return { label: 'Abo ✓', cls: 'free' };
+    const v = version.toUpperCase();
+    if (v.includes('IMAX'))   return ABO_SURCHARGES['IMAX'];
+    if (v.includes('ISENSE')) return ABO_SURCHARGES['ISENSE'];
+    if (v.includes('3D'))     return ABO_SURCHARGES['3D'];
+    if (v.includes('OV') || v.includes('OMU')) return ABO_SURCHARGES['OV'];
+    return { label: 'Abo ✓', cls: 'free' };
+  }
   let isLoading = false;
 
-  // ── Favoriten (localStorage) ──────────────────────────
+  // ── Watchlist (localStorage) ──────────────────────────
   function getFavs() {
-    try { return new Set(JSON.parse(localStorage.getItem('uci-favs') || '[]')); }
+    try { return new Set(JSON.parse(localStorage.getItem('uci-watchlist') || '[]')); }
     catch { return new Set(); }
   }
   function saveFavs(set) {
-    localStorage.setItem('uci-favs', JSON.stringify([...set]));
+    localStorage.setItem('uci-watchlist', JSON.stringify([...set]));
   }
   function toggleFav(filmId, btn) {
     const favs = getFavs();
@@ -927,16 +1293,15 @@
     } else {
       favs.add(filmId);
       btn.classList.add('active');
-      btn.textContent = '⭐';
+      btn.textContent = '🎬';
       btn.closest('.movie-card').classList.add('is-fav');
     }
     saveFavs(favs);
-    // Favoriten-Tab Badge aktualisieren
     updateFavTab(favs.size);
   }
   function updateFavTab(count) {
     const tab = document.querySelector('.fav-tab');
-    if (tab) tab.textContent = count > 0 ? `⭐ Favoriten (${count})` : '⭐ Favoriten';
+    if (tab) tab.textContent = count > 0 ? `🎬 Watchlist (${count})` : '🎬 Watchlist';
   }
 
   async function loadMovies(force = false) {
@@ -1015,11 +1380,16 @@
     let current = movies.filter(m => !m.isUpcoming);
     let upcoming = movies.filter(m => m.isUpcoming);
 
+    const seen = getSeen();
     if (activeFilter === 'current')  upcoming = [];
     if (activeFilter === 'upcoming') current = [];
     if (activeFilter === 'favs') {
       current  = current.filter(m => favs.has(m.filmId));
       upcoming = upcoming.filter(m => favs.has(m.filmId));
+    }
+    if (activeFilter === 'seen') {
+      current  = current.filter(m => seen.has(m.filmId));
+      upcoming = upcoming.filter(m => seen.has(m.filmId));
     }
 
     if (current.length === 0 && upcoming.length === 0) {
@@ -1032,9 +1402,16 @@
       } else if (activeFilter === 'favs') {
         main.innerHTML = `
           <div class="empty-state" style="padding:60px 24px;">
-            <div style="font-size:48px;margin-bottom:16px;">⭐</div>
-            <p style="font-size:1rem;font-weight:600;margin-bottom:8px;">Noch keine Favoriten</p>
-            <p style="font-size:0.85rem;">Tippe auf ☆ auf einer Filmkarte um ihn hier zu speichern.</p>
+            <div style="font-size:48px;margin-bottom:16px;">🎬</div>
+            <p style="font-size:1rem;font-weight:600;margin-bottom:8px;">Deine Watchlist ist leer</p>
+            <p style="font-size:0.85rem;">Tippe auf 🎬 auf einer Filmkarte um ihn hier zu speichern.</p>
+          </div>`;
+      } else if (activeFilter === 'seen') {
+        main.innerHTML = `
+          <div class="empty-state" style="padding:60px 24px;">
+            <div style="font-size:48px;margin-bottom:16px;">✓</div>
+            <p style="font-size:1rem;font-weight:600;margin-bottom:8px;">Noch keine Filme gesehen</p>
+            <p style="font-size:0.85rem;">Tippe auf ○ auf einer Filmkarte um ihn als gesehen zu markieren.</p>
           </div>`;
       } else {
         main.innerHTML = `<div class="empty-state">Keine Filme gefunden.</div>`;
@@ -1087,8 +1464,9 @@
       if (t.version) versions.add(t.version.toUpperCase());
     }));
     const versionBadges = [...versions].slice(0, 3).map(v => {
-      const cls = v === 'IMAX' ? 'imax' : v.includes('3D') ? 'threeD' : '';
-      return `<span class="version-badge ${cls}">${escHtml(v)}</span>`;
+      const aufpreis = getAufpreis(v);
+      const cls = aufpreis.cls === 'extra' ? 'surcharge' : 'included';
+      return `<span class="version-badge ${cls}" title="${aufpreis.label}">${escHtml(v)}</span>`;
     }).join('');
 
     const genres = m.genre ? m.genre.split(',').slice(0, 2).map(g =>
@@ -1124,17 +1502,24 @@
     ` : '';
 
     const idx = allMovies.indexOf(m);
-    const isFav = getFavs().has(m.filmId);
+    const isFav  = getFavs().has(m.filmId);
+    const isSeen = getSeen().has(m.filmId);
 
     return `
-      <div class="movie-card${isFav ? ' is-fav' : ''}" onclick="openModal(${idx})">
+      <div class="movie-card${isFav ? ' is-fav' : ''}${isSeen ? ' is-seen' : ''}" onclick="handleCardClick(event, '${m.filmId}', ${idx})">
         <div class="poster-wrapper">
           ${poster}
+          <div class="seen-overlay">✓</div>
           ${fskBadge}
           <button class="fav-btn${isFav ? ' active' : ''}"
             onclick="event.stopPropagation(); toggleFav('${m.filmId}', this)"
-            title="${isFav ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}">
-            ${isFav ? '⭐' : '☆'}
+            title="${isFav ? 'Von Watchlist entfernen' : 'Zur Watchlist hinzufügen'}">
+            ${isFav ? '🎬' : '+'}
+          </button>
+          <button class="seen-btn${isSeen ? ' active' : ''}"
+            onclick="event.stopPropagation(); toggleSeen('${m.filmId}', this)"
+            title="${isSeen ? 'Als nicht gesehen markieren' : 'Als gesehen markieren'}">
+            ${isSeen ? '✓' : '○'}
           </button>
           ${versionBadges ? `<div class="version-badges">${versionBadges}</div>` : ''}
         </div>
@@ -1175,10 +1560,12 @@
             <div class="modal-times">
               ${day.times.map(t => {
                 const bookUrl = t.href || 'https://www.uci-kinowelt.de/kinoprogramm/bad-oeynhausen/73/poster';
+                const aufpreis = getAufpreis(t.version);
                 return `
                   <a class="modal-time-slot" href="${bookUrl}" target="_blank" onclick="event.stopPropagation()">
                     ${escHtml(t.time)}
                     ${t.version ? `<span class="ver">${escHtml(t.version)}</span>` : ''}
+                    <span class="aufpreis-tag ${aufpreis.cls}">${aufpreis.label}</span>
                   </a>
                 `;
               }).join('')}
@@ -1195,14 +1582,28 @@
           <div class="modal-title">${escHtml(m.title)}</div>
           ${m.originalTitle && m.originalTitle !== m.title ? `<div class="modal-orig">${escHtml(m.originalTitle)}</div>` : ''}
           <div class="modal-tags">${tags}</div>
+          <div class="ratings-row" id="ratingsRow">
+            <span class="rating-badge loading-ratings">⭐ Lade…</span>
+          </div>
           ${m.description ? `<p class="modal-desc">${escHtml(m.description)}</p>` : ''}
+          <button class="trailer-btn" id="trailerBtn" onclick="loadTrailer(this.dataset.title)" data-title="${escHtml(m.title)}">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            Trailer
+          </button>
         </div>
+      </div>
+      <div class="trailer-embed" id="trailerEmbed">
+        <button class="trailer-embed-close" onclick="closeTrailer()">✕</button>
+        <iframe id="trailerIframe" allowfullscreen allow="autoplay; encrypted-media"></iframe>
       </div>
       ${showtimesHtml}
     `;
 
     document.getElementById('modalBackdrop').classList.add('open');
     document.body.style.overflow = 'hidden';
+
+    // Ratings asynchron nachladen
+    loadRatings(m.title, m.firstDate ? new Date(m.firstDate).getFullYear() : null);
   }
 
   function closeModal(e) {
@@ -1210,8 +1611,98 @@
   }
 
   function closeModalBtn() {
+    closeTrailer();
     document.getElementById('modalBackdrop').classList.remove('open');
     document.body.style.overflow = '';
+  }
+
+  async function loadTrailer(title, btnEl) {
+    const btn = btnEl || document.getElementById('trailerBtn');
+    const embed = document.getElementById('trailerEmbed');
+    const iframe = document.getElementById('trailerIframe');
+    if (!btn || !embed || !iframe) return;
+
+    // Toggle off if already playing
+    if (embed.classList.contains('visible')) {
+      closeTrailer();
+      return;
+    }
+
+    btn.classList.add('loading');
+    btn.textContent = 'Lade…';
+
+    try {
+      const res = await fetch(`/api/trailer?title=${encodeURIComponent(title)}`);
+      const data = await res.json();
+      if (data.videoId) {
+        iframe.src = `https://www.youtube-nocookie.com/embed/${data.videoId}?autoplay=1&rel=0`;
+        embed.classList.add('visible');
+        btn.innerHTML = `<svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;flex-shrink:0"><path d="M6 6h4v12H6zm8 0h4v12h-4z"/></svg> Trailer schließen`;
+        btn.style.background = '#555';
+      } else {
+        btn.innerHTML = `<svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;flex-shrink:0"><path d="M8 5v14l11-7z"/></svg> Kein Trailer gefunden`;
+        setTimeout(() => {
+          btn.innerHTML = `<svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;flex-shrink:0"><path d="M8 5v14l11-7z"/></svg> Trailer`;
+          btn.style.background = '';
+        }, 3000);
+      }
+    } catch (e) {
+      btn.textContent = 'Fehler';
+      setTimeout(() => { btn.textContent = 'Trailer'; }, 3000);
+    } finally {
+      btn.classList.remove('loading');
+    }
+  }
+
+  async function loadRatings(title, year) {
+    const row = document.getElementById('ratingsRow');
+    if (!row) return;
+
+    try {
+      const params = new URLSearchParams({ title });
+      if (year) params.set('year', year);
+      const res = await fetch(`/api/ratings?${params}`);
+      const data = await res.json();
+
+      let html = '';
+
+      // IMDb Badge
+      if (data.imdb && data.imdb.rating) {
+        html += `<a class="rating-badge imdb" href="${data.imdb.url || '#'}" target="_blank" onclick="event.stopPropagation()" title="IMDb Bewertung">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#000;flex-shrink:0"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+          ${data.imdb.rating}<span style="font-weight:400;font-size:0.75rem">/10</span>
+        </a>`;
+      }
+
+      // Rotten Tomatoes Badge
+      if (data.rt && data.rt.score !== null) {
+        const fresh = data.rt.score >= 60;
+        const cls = fresh ? 'rt-fresh' : 'rt-rotten';
+        const icon = fresh ? '🍅' : '🤢';
+        const link = data.rt.url ? ` href="${data.rt.url}" target="_blank"` : '';
+        html += `<a class="rating-badge ${cls}"${link} onclick="event.stopPropagation()" title="Rotten Tomatoes Tomatometer">
+          ${icon} ${data.rt.score}%
+        </a>`;
+      }
+
+      // Nichts gefunden → Row komplett ausblenden
+      row.innerHTML = html;
+      if (!html) row.style.display = 'none';
+    } catch {
+      row.innerHTML = `<span class="rating-badge rt-none">Bewertungen nicht verfügbar</span>`;
+    }
+  }
+
+  function closeTrailer() {
+    const embed = document.getElementById('trailerEmbed');
+    const iframe = document.getElementById('trailerIframe');
+    const btn = document.getElementById('trailerBtn');
+    if (embed) embed.classList.remove('visible');
+    if (iframe) iframe.src = '';
+    if (btn) {
+      btn.innerHTML = `<svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;flex-shrink:0"><path d="M8 5v14l11-7z"/></svg> Trailer`;
+      btn.style.background = '';
+    }
   }
 
   document.addEventListener('keydown', e => {
@@ -1240,9 +1731,201 @@
       .replace(/'/g, '&#39;');
   }
 
+  // ── Abstimmung ───────────────────────────────────────────
+  let isPollMode = false;
+  let pollSelected = new Set(); // filmIds
+
+  function togglePollMode() {
+    isPollMode = !isPollMode;
+    pollSelected.clear();
+    document.body.classList.toggle('poll-mode', isPollMode);
+    document.getElementById('pollBtn').classList.toggle('active', isPollMode);
+    document.querySelectorAll('.movie-card').forEach(c => c.classList.remove('poll-selected'));
+    updatePollBar();
+  }
+
+  function updatePollBar() {
+    const bar  = document.getElementById('pollBar');
+    const cnt  = document.getElementById('pollCount');
+    const btn  = document.getElementById('pollCreateBtn');
+    cnt.textContent = pollSelected.size;
+    btn.disabled = pollSelected.size < 2;
+    bar.classList.toggle('visible', isPollMode);
+  }
+
+  // Card-Klick im Poll-Modus abfangen
+  function handleCardClick(e, filmId, idx) {
+    if (!isPollMode) { openModal(idx); return; }
+    e.stopPropagation();
+    const card = e.currentTarget;
+    if (pollSelected.has(filmId)) {
+      pollSelected.delete(filmId);
+      card.classList.remove('poll-selected');
+    } else {
+      if (pollSelected.size >= 5) {
+        card.classList.add('poll-shake');
+        setTimeout(() => card.classList.remove('poll-shake'), 400);
+        return;
+      }
+      pollSelected.add(filmId);
+      card.classList.add('poll-selected');
+    }
+    updatePollBar();
+  }
+
+  async function createPoll() {
+    if (pollSelected.size < 2) return;
+    const btn = document.getElementById('pollCreateBtn');
+    btn.textContent = 'Erstelle…';
+    btn.disabled = true;
+
+    const films = allMovies
+      .filter(m => pollSelected.has(m.filmId))
+      .map(m => ({ filmId: m.filmId, title: m.title, poster: m.poster, genre: m.genre, runtime: m.runtime }));
+
+    try {
+      const res = await fetch('/api/polls', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ films }),
+      });
+      const data = await res.json();
+      if (!data.id) throw new Error('Keine ID erhalten');
+
+      const url = `${location.origin}/?vote=${data.id}`;
+      showPollShareModal(url, data.id);
+      togglePollMode();
+    } catch (err) {
+      alert('Fehler: ' + err.message);
+    } finally {
+      btn.textContent = 'Link erstellen';
+    }
+  }
+
+  function showPollShareModal(url, id) {
+    document.getElementById('modalContent').innerHTML = `
+      <div style="padding:28px 24px;">
+        <div style="font-size:2rem;margin-bottom:12px;">🗳️</div>
+        <h2 style="font-size:1.3rem;font-weight:800;margin-bottom:6px;">Abstimmung erstellt!</h2>
+        <p style="color:var(--text-dim);font-size:0.88rem;margin-bottom:4px;">
+          Teile diesen Link mit deinen Freunden. Code: <strong style="color:var(--gold)">${id}</strong>
+        </p>
+        <div class="share-box">
+          <span class="share-url" id="shareUrl">${escHtml(url)}</span>
+          <button class="copy-btn" onclick="copyPollLink('${escHtml(url)}', this)">Kopieren</button>
+        </div>
+        <a class="whatsapp-btn" href="https://wa.me/?text=${encodeURIComponent('🎬 Welchen Film sollen wir zusammen schauen? Stimm ab: ' + url)}" target="_blank">
+          📲 Per WhatsApp teilen
+        </a>
+        <p style="text-align:center;margin-top:16px;font-size:0.8rem;color:var(--text-dim);">
+          Die Abstimmung läuft 48 Stunden.
+        </p>
+      </div>
+    `;
+    document.getElementById('modalBackdrop').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function copyPollLink(url, btn) {
+    navigator.clipboard.writeText(url).then(() => {
+      btn.textContent = '✓ Kopiert!';
+      setTimeout(() => btn.textContent = 'Kopieren', 2000);
+    });
+  }
+
+  // ── Abstimmungs-Ansicht (?vote=ID) ──────────────────────
+  async function checkVoteMode() {
+    const params = new URLSearchParams(location.search);
+    const id = params.get('vote');
+    if (!id) return;
+
+    // Header vereinfachen, Filter ausblenden
+    document.querySelector('.filters-bar')?.style.setProperty('display', 'none');
+    document.getElementById('pollBtn').style.display = 'none';
+
+    const main = document.getElementById('main');
+    main.innerHTML = `<div class="loading-state"><div class="spinner"></div><p>Lade Abstimmung…</p></div>`;
+
+    try {
+      const res = await fetch(`/api/polls/${id}`);
+      if (!res.ok) throw new Error('Abstimmung nicht gefunden oder abgelaufen.');
+      const poll = await res.json();
+      renderVoteView(poll, id);
+    } catch (err) {
+      main.innerHTML = `<div class="error-state"><p><strong>⚠️ ${escHtml(err.message)}</strong></p></div>`;
+    }
+  }
+
+  function renderVoteView(poll, id) {
+    const main = document.getElementById('main');
+    const totalVotes = Object.values(poll.votes).reduce((s, v) => s + v, 0);
+
+    // Hat der User schon abgestimmt? (sessionStorage)
+    const votedFor = sessionStorage.getItem(`poll-${id}`);
+
+    const cards = poll.films.map(f => {
+      const votes = poll.votes[f.filmId] || 0;
+      const pct = totalVotes > 0 ? Math.round(votes / totalVotes * 100) : 0;
+      const isVoted = votedFor === f.filmId;
+      return `
+        <div class="vote-card${isVoted ? ' voted-for' : ''}" id="vc-${f.filmId}">
+          ${f.poster ? `<img src="${escHtml(f.poster)}" alt="${escHtml(f.title)}" onerror="this.style.display='none'">` : ''}
+          <div class="vote-card-body">
+            <div class="vote-card-title">${escHtml(f.title)}</div>
+            <div class="vote-card-meta">${[f.genre?.split(',')[0], f.runtime ? f.runtime + ' Min.' : ''].filter(Boolean).join(' · ')}</div>
+            ${votedFor ? `
+              <div class="result-bar-wrap">
+                <div class="result-bar-label"><span>${votes} Stimme${votes !== 1 ? 'n' : ''}</span><span>${pct}%</span></div>
+                <div class="result-bar-track"><div class="result-bar-fill" style="width:${pct}%"></div></div>
+              </div>
+            ` : ''}
+            <button class="vote-card-btn" ${votedFor ? 'disabled' : `onclick="castVote('${id}','${f.filmId}')"`}>
+              ${isVoted ? '✓ Meine Wahl' : votedFor ? '–' : 'Abstimmen'}
+            </button>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    main.innerHTML = `
+      <div class="vote-header">
+        <h1>🗳️ Film-Abstimmung</h1>
+        <p>${votedFor ? `${totalVotes} Stimme${totalVotes !== 1 ? 'n' : ''} bisher` : 'Für welchen Film seid ihr heute Abend?'}</p>
+      </div>
+      <div class="vote-grid">${cards}</div>
+    `;
+  }
+
+  async function castVote(pollId, filmId) {
+    try {
+      const res = await fetch(`/api/polls/${pollId}/vote`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filmId }),
+      });
+      const data = await res.json();
+      if (data.alreadyVoted || data.success) {
+        sessionStorage.setItem(`poll-${pollId}`, filmId);
+        // Frisch laden für aktualisierte Zahlen
+        const res2 = await fetch(`/api/polls/${pollId}`);
+        const poll = await res2.json();
+        renderVoteView(poll, pollId);
+      }
+    } catch (err) {
+      alert('Abstimmung fehlgeschlagen: ' + err.message);
+    }
+  }
+
   // Initial load
   document.getElementById('loadingState'); // already shown
-  loadMovies();
+
+  // Prüfen ob wir im Vote-Modus sind
+  const voteParam = new URLSearchParams(location.search).get('vote');
+  if (voteParam) {
+    checkVoteMode();
+  } else {
+    loadMovies();
+  }
 </script>
 </body>
 </html>

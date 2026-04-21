@@ -13,6 +13,7 @@ const BASE_URL = 'https://www.uci-kinowelt.de';
 const DATA_URL = 'https://raw.githubusercontent.com/MPEUUU/uci-kino/main/data/movies.json';
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
 
 let cache = { data: null, timestamp: 0 };
 const CACHE_TTL = 10 * 60 * 1000;
@@ -258,6 +259,132 @@ app.get('/api/movies', async (req, res) => {
   }
 });
 
+// Trailer lookup — searches YouTube without API key
+const trailerCache = new Map(); // title → { videoId, timestamp }
+const TRAILER_TTL = 60 * 60 * 1000; // 1 hour
+
+app.get('/api/trailer', async (req, res) => {
+  const title = (req.query.title || '').trim();
+  if (!title) return res.status(400).json({ error: 'title required' });
+
+  const cached = trailerCache.get(title);
+  if (cached && Date.now() - cached.timestamp < TRAILER_TTL) {
+    return res.json({ videoId: cached.videoId });
+  }
+
+  try {
+    const query = encodeURIComponent(title + ' trailer deutsch');
+    const url = `https://www.youtube.com/results?search_query=${query}`;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
+    const ytRes = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
+        'Accept-Language': 'de-DE,de;q=0.9',
+      }
+    });
+    clearTimeout(timeout);
+    const html = await ytRes.text();
+    // Extract first videoId from YouTube's initial data JSON
+    const match = html.match(/"videoId":"([a-zA-Z0-9_-]{11})"/);
+    const videoId = match ? match[1] : null;
+    if (videoId) {
+      trailerCache.set(title, { videoId, timestamp: Date.now() });
+    }
+    res.json({ videoId });
+  } catch (err) {
+    console.error('Trailer fetch error:', err.message);
+    res.json({ videoId: null });
+  }
+});
+
+// Ratings via OMDb API (free key: https://www.omdbapi.com/apikey.aspx)
+require('dotenv').config();
+const ratingsCache = new Map();
+const RATINGS_TTL = 6 * 60 * 60 * 1000; // 6 hours
+
+// Build list of title variants to try against OMDb
+// UCI often shows "Deutscher Titel - English Title" or "Deutscher Titel – English Title"
+function titleVariants(title) {
+  const variants = [title];
+  // Extract part after " - " or " – " (en-dash)
+  const afterDash = title.match(/[–\-]\s+(.+)$/);
+  if (afterDash) variants.push(afterDash[1].trim());
+  // Extract part before " - " as well
+  const beforeDash = title.match(/^(.+?)\s+[–\-]/);
+  if (beforeDash) variants.push(beforeDash[1].trim());
+  // Remove leading "Der/Die/Das/Ein/Eine " (German articles)
+  const withoutArticle = title.replace(/^(Der|Die|Das|Ein|Eine)\s+/i, '');
+  if (withoutArticle !== title) variants.push(withoutArticle);
+  // Deduplicate
+  return [...new Set(variants)];
+}
+
+async function omdbFetch(apikey, t, year) {
+  const params = new URLSearchParams({ apikey, t, type: 'movie', r: 'json' });
+  if (year) params.set('y', year);
+  const ctrl = new AbortController();
+  const timeout = setTimeout(() => ctrl.abort(), 8000);
+  try {
+    const res = await fetch(`https://www.omdbapi.com/?${params}`, { signal: ctrl.signal });
+    return await res.json();
+  } finally { clearTimeout(timeout); }
+}
+
+app.get('/api/ratings', async (req, res) => {
+  const title = (req.query.title || '').trim();
+  const year  = (req.query.year  || '').trim();
+  if (!title) return res.status(400).json({ error: 'title required' });
+
+  const OMDB_KEY = process.env.OMDB_API_KEY;
+  if (!OMDB_KEY || OMDB_KEY === 'dein_key_hier') {
+    return res.json({ imdb: null, rt: null, noKey: true });
+  }
+
+  const cacheKey = `${title}|${year}`;
+  const cached = ratingsCache.get(cacheKey);
+  if (cached && Date.now() - cached.timestamp < RATINGS_TTL) {
+    return res.json({ imdb: cached.imdb, rt: cached.rt });
+  }
+
+  try {
+    const variants = titleVariants(title);
+    let data = null;
+
+    // Try each variant, first with year then without
+    outer: for (const variant of variants) {
+      for (const y of year ? [year, ''] : ['']) {
+        const d = await omdbFetch(OMDB_KEY, variant, y);
+        if (d.Response === 'True') { data = d; break outer; }
+      }
+    }
+
+    if (!data) {
+      ratingsCache.set(cacheKey, { imdb: null, rt: null, timestamp: Date.now() });
+      return res.json({ imdb: null, rt: null });
+    }
+    return processOmdb(data, cacheKey, res);
+  } catch (err) {
+    console.error('Ratings fetch error:', err.message);
+    res.json({ imdb: null, rt: null });
+  }
+});
+
+function processOmdb(data, cacheKey, res) {
+  const imdb = data.imdbRating && data.imdbRating !== 'N/A'
+    ? { rating: data.imdbRating, votes: data.imdbVotes, url: `https://www.imdb.com/title/${data.imdbID}/` }
+    : null;
+
+  const rtEntry = (data.Ratings || []).find(r => r.Source === 'Rotten Tomatoes');
+  const rt = rtEntry
+    ? { score: parseInt(rtEntry.Value), url: null }
+    : null;
+
+  ratingsCache.set(cacheKey, { imdb, rt, timestamp: Date.now() });
+  return res.json({ imdb, rt });
+}
+
 app.get('/api/refresh', async (req, res) => {
   cache = { data: null, timestamp: 0 };
   try {
@@ -266,6 +393,78 @@ app.get('/api/refresh', async (req, res) => {
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
   }
+});
+
+// ── Abstimmungen ─────────────────────────────────────────
+// In-Memory (Polls sind kurzlebig — ein Kinoabend)
+const polls = new Map();
+const POLL_TTL = 48 * 60 * 60 * 1000; // 48 Stunden
+
+function genId() {
+  return Math.random().toString(36).slice(2, 8).toUpperCase();
+}
+
+// Abgelaufene Polls aufräumen
+function cleanPolls() {
+  const now = Date.now();
+  for (const [id, poll] of polls) {
+    if (now > poll.expiresAt) polls.delete(id);
+  }
+}
+
+// Poll erstellen
+app.post('/api/polls', (req, res) => {
+  const { films } = req.body;
+  if (!Array.isArray(films) || films.length < 2 || films.length > 5)
+    return res.status(400).json({ error: '2–5 Filme erforderlich' });
+
+  cleanPolls();
+  let id;
+  do { id = genId(); } while (polls.has(id));
+
+  polls.set(id, {
+    id,
+    films: films.map(f => ({
+      filmId: f.filmId,
+      title:  f.title,
+      poster: f.poster,
+      genre:  f.genre,
+      runtime: f.runtime,
+    })),
+    votes:   {},   // filmId → count
+    voters:  [],   // IPs (simple deduplizierung)
+    createdAt: Date.now(),
+    expiresAt: Date.now() + POLL_TTL,
+  });
+
+  res.json({ id });
+});
+
+// Poll abrufen
+app.get('/api/polls/:id', (req, res) => {
+  const poll = polls.get(req.params.id.toUpperCase());
+  if (!poll) return res.status(404).json({ error: 'Abstimmung nicht gefunden oder abgelaufen' });
+  res.json(poll);
+});
+
+// Abstimmen
+app.post('/api/polls/:id/vote', (req, res) => {
+  const poll = polls.get(req.params.id.toUpperCase());
+  if (!poll) return res.status(404).json({ error: 'Abstimmung nicht gefunden' });
+  if (Date.now() > poll.expiresAt) return res.status(410).json({ error: 'Abstimmung abgelaufen' });
+
+  const { filmId } = req.body;
+  if (!poll.films.find(f => f.filmId === filmId))
+    return res.status(400).json({ error: 'Ungültiger Film' });
+
+  // IP-basierte Duplikatsvermeidung
+  const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket.remoteAddress || 'unknown';
+  if (poll.voters.includes(ip))
+    return res.json({ alreadyVoted: true, votes: poll.votes });
+
+  poll.votes[filmId] = (poll.votes[filmId] || 0) + 1;
+  poll.voters.push(ip);
+  res.json({ success: true, votes: poll.votes });
 });
 
 app.listen(PORT, '0.0.0.0', () => {
