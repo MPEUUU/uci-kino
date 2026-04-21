@@ -800,6 +800,127 @@
     }
     .whatsapp-btn:hover { background: #1ebe5b; }
 
+    /* --- Gemeinsame Watchlist --- */
+
+    /* Gemeinsame Watchlist Ansicht */
+    .slist-view { max-width: 700px; margin: 0 auto; padding: 0 16px 40px; }
+    .slist-header { text-align: center; padding: 28px 0 20px; }
+    .slist-header h1 { font-size: 1.4rem; font-weight: 800; margin-bottom: 6px; }
+    .slist-header p { font-size: 0.88rem; color: var(--text-dim); }
+
+    .slist-name-box {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+    }
+    .slist-name-box input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+    .slist-name-box label { font-size: 0.82rem; color: var(--text-dim); white-space: nowrap; }
+    .slist-name-save {
+      background: var(--gold);
+      border: none;
+      border-radius: 7px;
+      padding: 6px 14px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .slist-films { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+    .slist-film-item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      transition: border-color 0.2s;
+    }
+    .slist-film-item:hover { border-color: var(--gold-dim); }
+    .slist-film-poster { width: 44px; height: 64px; object-fit: cover; border-radius: 6px; flex-shrink: 0; background: var(--border); }
+    .slist-film-info { flex: 1; min-width: 0; }
+    .slist-film-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .slist-film-meta { font-size: 0.75rem; color: var(--text-dim); }
+    .slist-film-by { font-size: 0.72rem; color: var(--gold); margin-top: 3px; }
+    .slist-remove-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      width: 28px; height: 28px;
+      color: var(--text-dim);
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+    .slist-remove-btn:hover { border-color: #ef4444; color: #ef4444; }
+
+    .slist-empty { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.9rem; }
+
+    .slist-add-section h3 { font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+    .slist-program-grid { display: flex; flex-direction: column; gap: 8px; }
+    .slist-program-item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .slist-program-item:hover { border-color: var(--gold-dim); }
+    .slist-program-item.already-added { opacity: 0.4; pointer-events: none; }
+    .slist-program-poster { width: 36px; height: 52px; object-fit: cover; border-radius: 5px; flex-shrink: 0; background: var(--border); }
+    .slist-program-title { flex: 1; font-size: 0.88rem; font-weight: 600; }
+    .slist-add-btn {
+      background: var(--gold);
+      border: none;
+      border-radius: 7px;
+      padding: 5px 12px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: #000;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .slist-sync-info { font-size: 0.75rem; color: var(--text-dim); text-align: center; margin-top: 16px; }
+
+    .slist-showtimes { margin: 6px 0 4px; display: flex; flex-direction: column; gap: 4px; }
+    .slist-showday { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+    .slist-showday-label { font-size: 0.72rem; color: var(--gold); font-weight: 600; white-space: nowrap; min-width: 72px; }
+    .slist-showday-times { display: flex; flex-wrap: wrap; gap: 4px; }
+    .slist-showtime {
+      font-size: 0.72rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 2px 6px;
+      white-space: nowrap;
+    }
+    .slist-showtime em { font-style: normal; color: var(--text-dim); font-size: 0.65rem; }
+    .slist-showtime-more { font-size: 0.68rem; color: var(--text-dim); padding: 2px 4px; }
+    .slist-no-showtimes { font-size: 0.72rem; color: var(--text-dim); margin: 4px 0; font-style: italic; }
+
+    .slist-status { font-size: 0.65rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: middle; }
+    .slist-status.current  { background: rgba(74,222,128,0.15); color: #4ade80; border: 1px solid rgba(74,222,128,0.3); }
+    .slist-status.upcoming { background: rgba(226,165,58,0.15); color: var(--gold); border: 1px solid rgba(226,165,58,0.3); }
+
     /* --- Trailer --- */
     .trailer-btn {
       display: inline-flex;
@@ -1185,6 +1306,7 @@
       <button class="filter-tab" data-filter="current" onclick="setFilter('current')">Jetzt im Kino</button>
       <button class="filter-tab" data-filter="upcoming" onclick="setFilter('upcoming')">Demnächst</button>
       <button class="filter-tab fav-tab" data-filter="favs" onclick="setFilter('favs')">🎬 Watchlist</button>
+      <button class="filter-tab" data-filter="group" onclick="setFilter('group')">👥 Gemeinsam</button>
       <button class="filter-tab" data-filter="seen" onclick="setFilter('seen')">✓ Gesehen</button>
     </div>
   </div>
@@ -1381,6 +1503,13 @@
     let upcoming = movies.filter(m => m.isUpcoming);
 
     const seen = getSeen();
+
+    // Gemeinsame Watchlist hat eigene Ansicht
+    if (activeFilter === 'group') {
+      renderGroupWatchlist();
+      return;
+    }
+
     if (activeFilter === 'current')  upcoming = [];
     if (activeFilter === 'upcoming') current = [];
     if (activeFilter === 'favs') {
@@ -1918,6 +2047,172 @@
 
   // Initial load
   document.getElementById('loadingState'); // already shown
+
+  // ── Gemeinsame Watchlist (eine für alle) ─────────────────
+  let groupSyncInterval = null;
+
+  function getMyName() {
+    return localStorage.getItem('uci-my-name') || '';
+  }
+  function saveMyName(n) {
+    localStorage.setItem('uci-my-name', n.trim() || 'Jemand');
+  }
+
+  async function renderGroupWatchlist() {
+    const main = document.getElementById('main');
+    main.innerHTML = `<div class="loading-state"><div class="spinner"></div><p>Lade…</p></div>`;
+
+    // Auto-sync starten falls noch nicht aktiv
+    if (!groupSyncInterval) {
+      groupSyncInterval = setInterval(async () => {
+        if (activeFilter !== 'group') { clearInterval(groupSyncInterval); groupSyncInterval = null; return; }
+        try {
+          const r = await fetch('/api/group-watchlist');
+          const list = await r.json();
+          renderGroupView(list);
+        } catch {}
+      }, 5000);
+    }
+
+    try {
+      const res = await fetch('/api/group-watchlist');
+      const list = await res.json();
+      renderGroupView(list);
+    } catch (err) {
+      main.innerHTML = `<div class="error-state"><p><strong>⚠️ ${escHtml(err.message)}</strong></p></div>`;
+    }
+  }
+
+  function renderGroupView(list) {
+    const main = document.getElementById('main');
+    const myName = getMyName();
+    const addedIds = new Set(list.films.map(f => f.filmId));
+
+    // Sortierung: aktuell laufende zuerst, dann demnächst (nach Startdatum)
+    const sortedFilms = [...list.films].sort((a, b) => {
+      const ma = allMovies.find(m => m.filmId === a.filmId);
+      const mb = allMovies.find(m => m.filmId === b.filmId);
+      const aUpcoming = ma?.isUpcoming ?? false;
+      const bUpcoming = mb?.isUpcoming ?? false;
+      if (aUpcoming !== bUpcoming) return aUpcoming ? 1 : -1; // laufende zuerst
+      // Beide gleich → nach erstem Vorstellungsdatum
+      const aDate = ma?.firstDate ? new Date(ma.firstDate) : new Date(9999,0);
+      const bDate = mb?.firstDate ? new Date(mb.firstDate) : new Date(9999,0);
+      return aDate - bDate;
+    });
+
+    const filmItems = list.films.length > 0
+      ? sortedFilms.map(f => {
+          const movieData = allMovies.find(m => m.filmId === f.filmId);
+          const showtimes = movieData?.showtimes || [];
+
+          const showtimesHtml = showtimes.length > 0
+            ? `<div class="slist-showtimes">
+                ${showtimes.slice(0, 3).map(day => `
+                  <div class="slist-showday">
+                    <span class="slist-showday-label">${escHtml(day.date)}</span>
+                    <span class="slist-showday-times">
+                      ${day.times.slice(0, 4).map(t =>
+                        `<span class="slist-showtime">${escHtml(t.time)}${t.version ? ` <em>${escHtml(t.version)}</em>` : ''}</span>`
+                      ).join('')}
+                      ${day.times.length > 4 ? `<span class="slist-showtime-more">+${day.times.length - 4}</span>` : ''}
+                    </span>
+                  </div>
+                `).join('')}
+                ${showtimes.length > 3 ? `<div style="font-size:0.72rem;color:var(--text-dim);margin-top:4px;">+ ${showtimes.length - 3} weitere Tage</div>` : ''}
+              </div>`
+            : `<div class="slist-no-showtimes">Noch keine Vorstellungen geplant</div>`;
+
+          return `
+            <div class="slist-film-item">
+              ${f.poster ? `<img class="slist-film-poster" src="${escHtml(f.poster)}" onerror="this.style.display='none'">` : '<div class="slist-film-poster"></div>'}
+              <div class="slist-film-info">
+                <div class="slist-film-title">
+                  ${escHtml(f.title)}
+                  ${movieData?.isUpcoming
+                    ? `<span class="slist-status upcoming">Demnächst</span>`
+                    : `<span class="slist-status current">Läuft</span>`}
+                </div>
+                <div class="slist-film-meta">${[f.genre?.split(',')[0], f.runtime ? f.runtime + ' Min.' : ''].filter(Boolean).join(' · ')}</div>
+                ${showtimesHtml}
+                <div class="slist-film-by">von ${escHtml(f.addedBy)}</div>
+              </div>
+              <button class="slist-remove-btn" onclick="groupRemove('${f.filmId}')" title="Entfernen">×</button>
+            </div>
+          `;
+        }).join('')
+      : `<div class="slist-empty">Noch leer — füge Filme aus dem Programm hinzu!</div>`;
+
+    const sortedProgram = [...allMovies].sort((a, b) => {
+      if (a.isUpcoming !== b.isUpcoming) return a.isUpcoming ? 1 : -1;
+      const aDate = a.firstDate ? new Date(a.firstDate) : new Date(9999,0);
+      const bDate = b.firstDate ? new Date(b.firstDate) : new Date(9999,0);
+      return aDate - bDate;
+    });
+
+    const programItems = sortedProgram.map(m => `
+      <div class="slist-program-item${addedIds.has(m.filmId) ? ' already-added' : ''}">
+        ${m.poster ? `<img class="slist-program-poster" src="${escHtml(m.poster)}" onerror="this.style.display='none'">` : '<div class="slist-program-poster"></div>'}
+        <div class="slist-program-title">${escHtml(m.title)}</div>
+        <button class="slist-add-btn" onclick="groupAdd('${m.filmId}')" ${addedIds.has(m.filmId) ? 'disabled' : ''}>
+          ${addedIds.has(m.filmId) ? '✓' : '+ Hinzufügen'}
+        </button>
+      </div>
+    `).join('');
+
+    main.innerHTML = `
+      <div class="slist-view">
+        <div class="slist-header">
+          <h1>👥 Gemeinsame Watchlist</h1>
+          <p>Alle sehen und bearbeiten dieselbe Liste · Sync alle 5 Sek.</p>
+        </div>
+
+        <div class="slist-name-box">
+          <label>Dein Name:</label>
+          <input id="myNameInput" type="text" placeholder="z.B. Max" maxlength="20" value="${escHtml(myName)}"
+            oninput="saveMyName(this.value)" onkeydown="if(event.key==='Enter')this.blur()">
+        </div>
+
+        <div class="slist-films">${filmItems}</div>
+
+        <div class="slist-add-section">
+          <h3>Aus dem Programm hinzufügen</h3>
+          <div class="slist-program-grid">${programItems}</div>
+        </div>
+
+        <div class="slist-sync-info">🔄 Automatischer Sync aktiv</div>
+      </div>
+    `;
+  }
+
+  async function groupAdd(filmId) {
+    const m = allMovies.find(x => x.filmId === filmId);
+    if (!m) return;
+    try {
+      await fetch('/api/group-watchlist/add', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          film: { filmId: m.filmId, title: m.title, poster: m.poster, genre: m.genre, runtime: m.runtime },
+          addedBy: getMyName() || 'Jemand',
+        }),
+      });
+      const r = await fetch('/api/group-watchlist');
+      renderGroupView(await r.json());
+    } catch {}
+  }
+
+  async function groupRemove(filmId) {
+    try {
+      await fetch('/api/group-watchlist/remove', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filmId }),
+      });
+      const r = await fetch('/api/group-watchlist');
+      renderGroupView(await r.json());
+    } catch {}
+  }
 
   // Prüfen ob wir im Vote-Modus sind
   const voteParam = new URLSearchParams(location.search).get('vote');

@@ -467,6 +467,33 @@ app.post('/api/polls/:id/vote', (req, res) => {
   res.json({ success: true, votes: poll.votes });
 });
 
+// ── Gemeinsame Watchlist (eine für alle) ─────────────────
+const groupWatchlist = {
+  films: [], // [{ filmId, title, poster, genre, runtime, addedBy, addedAt }]
+};
+
+// Abrufen
+app.get('/api/group-watchlist', (req, res) => {
+  res.json(groupWatchlist);
+});
+
+// Film hinzufügen
+app.post('/api/group-watchlist/add', (req, res) => {
+  const { film, addedBy } = req.body;
+  if (!film?.filmId) return res.status(400).json({ error: 'filmId fehlt' });
+  if (!groupWatchlist.films.find(f => f.filmId === film.filmId)) {
+    groupWatchlist.films.push({ ...film, addedBy: addedBy || 'Jemand', addedAt: Date.now() });
+  }
+  res.json(groupWatchlist);
+});
+
+// Film entfernen
+app.post('/api/group-watchlist/remove', (req, res) => {
+  const { filmId } = req.body;
+  groupWatchlist.films = groupWatchlist.films.filter(f => f.filmId !== filmId);
+  res.json(groupWatchlist);
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   const { networkInterfaces } = require('os');
   const nets = networkInterfaces();
