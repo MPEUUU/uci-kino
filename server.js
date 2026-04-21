@@ -255,22 +255,28 @@ function buildVersionLabel(versionStr, subtext) {
 }
 
 app.get('/api/debug', async (req, res) => {
-  try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 10000);
-    const r = await fetch(UCI_URL, {
-      signal: controller.signal,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8',
-        'Accept-Language': 'de-DE,de;q=0.9',
-      }
-    });
-    clearTimeout(timeout);
-    res.json({ status: r.status, ok: r.ok, url: UCI_URL });
-  } catch (err) {
-    res.json({ error: err.message, type: err.name });
+  const results = {};
+  const encoded = encodeURIComponent(UCI_URL);
+
+  const tests = {
+    direct: UCI_URL,
+    allorigins: `https://api.allorigins.win/raw?url=${encoded}`,
+    corsproxy: `https://corsproxy.io/?${encoded}`,
+  };
+
+  for (const [name, url] of Object.entries(tests)) {
+    try {
+      const controller = new AbortController();
+      const t = setTimeout(() => controller.abort(), 12000);
+      const r = await fetch(url, { signal: controller.signal, headers: { 'User-Agent': 'Mozilla/5.0' } });
+      clearTimeout(t);
+      const text = await r.text();
+      results[name] = { status: r.status, ok: r.ok, hasFilmData: text.includes('film-container'), length: text.length };
+    } catch (e) {
+      results[name] = { error: e.message };
+    }
   }
+  res.json(results);
 });
 
 app.get('/api/movies', async (req, res) => {
