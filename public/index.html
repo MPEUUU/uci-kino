@@ -165,6 +165,33 @@
 
     .filter-tab:hover { color: var(--text); border-color: var(--gold-dim); }
     .filter-tab.active { background: var(--gold); color: #000; border-color: var(--gold); font-weight: 600; }
+    .filter-tab.fav-tab.active { background: #e8c84a; }
+
+    /* FAVORITEN BUTTON */
+    .fav-btn {
+      position: absolute;
+      top: 8px; left: 8px;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.6);
+      border: none;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      backdrop-filter: blur(4px);
+      transition: transform 0.2s, background 0.2s;
+      z-index: 5;
+      line-height: 1;
+    }
+    .fav-btn:hover { transform: scale(1.15); }
+    .fav-btn.active { background: rgba(226,165,58,0.85); }
+
+    /* Favoriten-Karte: goldener linker Rand */
+    .movie-card.is-fav { border-color: var(--gold-dim); }
+    .movie-card.is-fav .card-title::before {
+      content: '⭐ ';
+      font-size: 0.8em;
+    }
 
     /* MAIN */
     main {
@@ -712,6 +739,12 @@
         font-size: 0.62rem;
         padding: 1px 5px;
       }
+      .fav-btn {
+        top: auto; left: auto;
+        bottom: 6px; right: 6px;
+        width: 28px; height: 28px;
+        font-size: 14px;
+      }
       .version-badges { bottom: 6px; left: 6px; gap: 2px; }
       .version-badge { font-size: 0.58rem; padding: 1px 4px; }
 
@@ -848,6 +881,7 @@
       <button class="filter-tab active" data-filter="all" onclick="setFilter('all')">Alle</button>
       <button class="filter-tab" data-filter="current" onclick="setFilter('current')">Jetzt im Kino</button>
       <button class="filter-tab" data-filter="upcoming" onclick="setFilter('upcoming')">Demnächst</button>
+      <button class="filter-tab fav-tab" data-filter="favs" onclick="setFilter('favs')">⭐ Favoriten</button>
     </div>
   </div>
 </div>
@@ -874,7 +908,37 @@
 <script>
   let allMovies = [];
   let activeFilter = 'all';
-  let isLoading = false; // Verhindert Doppelklick-Crash
+  let isLoading = false;
+
+  // ── Favoriten (localStorage) ──────────────────────────
+  function getFavs() {
+    try { return new Set(JSON.parse(localStorage.getItem('uci-favs') || '[]')); }
+    catch { return new Set(); }
+  }
+  function saveFavs(set) {
+    localStorage.setItem('uci-favs', JSON.stringify([...set]));
+  }
+  function toggleFav(filmId, btn) {
+    const favs = getFavs();
+    if (favs.has(filmId)) {
+      favs.delete(filmId);
+      btn.classList.remove('active');
+      btn.textContent = '☆';
+      btn.closest('.movie-card').classList.remove('is-fav');
+    } else {
+      favs.add(filmId);
+      btn.classList.add('active');
+      btn.textContent = '⭐';
+      btn.closest('.movie-card').classList.add('is-fav');
+    }
+    saveFavs(favs);
+    // Favoriten-Tab Badge aktualisieren
+    updateFavTab(favs.size);
+  }
+  function updateFavTab(count) {
+    const tab = document.querySelector('.fav-tab');
+    if (tab) tab.textContent = count > 0 ? `⭐ Favoriten (${count})` : '⭐ Favoriten';
+  }
 
   async function loadMovies(force = false) {
     if (isLoading) return; // bereits am laden → ignorieren
@@ -946,11 +1010,18 @@
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
+    const favs = getFavs();
+    updateFavTab(favs.size);
+
     let current = movies.filter(m => !m.isUpcoming);
     let upcoming = movies.filter(m => m.isUpcoming);
 
-    if (activeFilter === 'current') upcoming = [];
+    if (activeFilter === 'current')  upcoming = [];
     if (activeFilter === 'upcoming') current = [];
+    if (activeFilter === 'favs') {
+      current  = current.filter(m => favs.has(m.filmId));
+      upcoming = upcoming.filter(m => favs.has(m.filmId));
+    }
 
     if (current.length === 0 && upcoming.length === 0) {
       if (allMovies.length === 0) {
@@ -958,6 +1029,13 @@
           <div class="error-state">
             <p><strong>Keine Filmdaten gefunden.</strong></p>
             <p style="margin-top:8px;font-size:0.85rem;">Die UCI-Website hat möglicherweise ihre Struktur geändert. Bitte versuche es später erneut oder besuche <a href="https://www.uci-kinowelt.de/kinoprogramm/bad-oeynhausen/73/poster" target="_blank" style="color:var(--gold)">uci-kinowelt.de</a> direkt.</p>
+          </div>`;
+      } else if (activeFilter === 'favs') {
+        main.innerHTML = `
+          <div class="empty-state" style="padding:60px 24px;">
+            <div style="font-size:48px;margin-bottom:16px;">⭐</div>
+            <p style="font-size:1rem;font-weight:600;margin-bottom:8px;">Noch keine Favoriten</p>
+            <p style="font-size:0.85rem;">Tippe auf ☆ auf einer Filmkarte um ihn hier zu speichern.</p>
           </div>`;
       } else {
         main.innerHTML = `<div class="empty-state">Keine Filme gefunden.</div>`;
@@ -1047,12 +1125,18 @@
     ` : '';
 
     const idx = allMovies.indexOf(m);
+    const isFav = getFavs().has(m.filmId);
 
     return `
-      <div class="movie-card" onclick="openModal(${idx})">
+      <div class="movie-card${isFav ? ' is-fav' : ''}" onclick="openModal(${idx})">
         <div class="poster-wrapper">
           ${poster}
           ${fskBadge}
+          <button class="fav-btn${isFav ? ' active' : ''}"
+            onclick="event.stopPropagation(); toggleFav('${m.filmId}', this)"
+            title="${isFav ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen'}">
+            ${isFav ? '⭐' : '☆'}
+          </button>
           ${versionBadges ? `<div class="version-badges">${versionBadges}</div>` : ''}
         </div>
         <div class="card-body">
