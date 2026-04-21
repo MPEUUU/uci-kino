@@ -9,43 +9,65 @@ const PORT = process.env.PORT || 3000;
 const UCI_URL = 'https://www.uci-kinowelt.de/kinoprogramm/bad-oeynhausen/73/poster';
 const BASE_URL = 'https://www.uci-kinowelt.de';
 
+// Proxy-Dienste als Fallback wenn UCI direkt blockiert
+const PROXIES = [
+  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+];
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 let cache = { data: null, timestamp: 0 };
 const CACHE_TTL = 10 * 60 * 1000;
-let fetchInFlight = null; // Verhindert gleichzeitige UCI-Anfragen
+let fetchInFlight = null;
+
+// Versucht eine URL direkt oder über Proxy-Dienste zu laden
+async function fetchWithFallback(url) {
+  const attempts = [
+    // 1. Direkter Aufruf
+    () => fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'de-DE,de;q=0.9',
+      }
+    }),
+    // 2. AllOrigins Proxy
+    () => fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`),
+    // 3. CorsProxy
+    () => fetch(`https://corsproxy.io/?${encodeURIComponent(url)}`),
+  ];
+
+  for (const attempt of attempts) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 20000);
+      const res = await attempt();
+      clearTimeout(timeout);
+      if (res.ok) {
+        const html = await res.text();
+        if (html.includes('film-container')) return html; // echte UCI-Seite
+      }
+    } catch (e) {
+      console.log('Fetch attempt failed:', e.message);
+    }
+  }
+  throw new Error('Alle Fetch-Versuche fehlgeschlagen (UCI blockiert alle Routen)');
+}
 
 async function fetchMovies() {
   const now = Date.now();
   if (cache.data && now - cache.timestamp < CACHE_TTL) return cache.data;
-
-  // Wenn schon ein Fetch läuft, warte auf dessen Ergebnis statt neu anzufangen
   if (fetchInFlight) return fetchInFlight;
 
   fetchInFlight = (async () => {
     try {
-      // AbortController für 20-Sekunden-Timeout
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 20000);
-
-      const res = await fetch(UCI_URL, {
-        signal: controller.signal,
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
-          'Accept': 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8',
-          'Accept-Language': 'de-DE,de;q=0.9',
-        }
-      });
-
-      clearTimeout(timeout);
-      if (!res.ok) throw new Error(`UCI fetch failed: ${res.status}`);
-      const html = await res.text();
-
+      const html = await fetchWithFallback(UCI_URL);
       const movies = parseMovies(html);
       cache = { data: movies, timestamp: Date.now() };
       return movies;
     } finally {
-      fetchInFlight = null; // Lock immer freigeben
+      fetchInFlight = null;
     }
   })();
 
