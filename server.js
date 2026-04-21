@@ -232,6 +232,25 @@ function buildVersionLabel(versionStr, subtext) {
   return labels.join(' ');
 }
 
+app.get('/api/debug', async (req, res) => {
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000);
+    const r = await fetch(UCI_URL, {
+      signal: controller.signal,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'de-DE,de;q=0.9',
+      }
+    });
+    clearTimeout(timeout);
+    res.json({ status: r.status, ok: r.ok, url: UCI_URL });
+  } catch (err) {
+    res.json({ error: err.message, type: err.name });
+  }
+});
+
 app.get('/api/movies', async (req, res) => {
   try {
     const movies = await fetchMovies();
